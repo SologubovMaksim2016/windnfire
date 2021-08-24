@@ -1,0 +1,38 @@
+{
+    "name": "windfire",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@admin-bro/express": "^3.0.0",
+        "@admin-bro/mongoose": "^1.0.0",
+        "admin-bro": "^3.2.5",
+        "body-parser": "^1.19.0",
+        "cheerio": "^1.0.0-rc.10",
+        "child_process": "^1.0.2",
+        "express": "^4.17.1",
+        "express-device": "^0.4.2",
+        "express-formidable": "^1.2.0",
+        "mongodb": "^3.6.2",
+        "mongoose": "^5.10.5",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.2",
+        "mysql2": "^2.2.5",
+        "node-php": "0.0.1",
+        "node-php-server": "^0.1.2",
+        "nodemailer": "^6.6.1",
+        "path": "^0.12.7",
+        "read-css": "^0.3.0"
+    },
+    "engines": {
+        "node": "12.19.x",
+        "npm": "6.18.x"
+    }
+}

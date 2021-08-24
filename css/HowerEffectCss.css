@@ -1,0 +1,151 @@
+
+
+
+.card{
+    position: relative;
+    z-index: 2;
+}
+.front_card{
+    position: relative;
+    transition-duration: 0.5s;
+    transition: all 0.2;
+    transition-property: z-index;
+    z-index: 2; 
+    /* transition: z-index 1.0s; */
+}
+
+.back_card{
+    position: absolute;
+    margin-left: 100%;
+    width: 0%;
+    bottom: 0;          
+    transition: margin-left 0.5s;
+    /* transition: z-index 1.0s; */
+    width: 98%;
+    height: 70%;
+    z-index: 1;
+}
+.back_card.clear{
+    width: 0
+}
+
+.white .back_card:not(.clear){    
+    background: white;
+}
+.black .back_card:not(.clear){    
+    background: black;
+}
+.pink .back_card:not(.clear){    
+    background: #e7335d;
+}
+.yellow .back_card:not(.clear){    
+    background: #fed841;
+}
+
+
+.back_card div{   
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+    font-size: 1.25vw;
+    margin-right: 2.5vw;
+    height: 6vw;
+}
+.white .back_card{
+    color: #e7335d;
+}
+.yellow .back_card{
+    color: black;
+}
+.black .back_card{
+    color: white;
+}
+.pink .back_card{
+    color: black;
+}
+.white .back_card button{
+    background-color: white;
+    border: 0.2vw solid #e7335d;
+    color: #e7335d;
+    cursor: pointer;
+}
+.white .back_card button:hover{
+    background-color: #e7335d;
+    border: 0.2vw solid white;
+    color: white;
+}
+
+
+.black .back_card button:hover{
+    background-color: white;
+    border: 0.2vw solid black;
+    color: black;
+}
+
+.black .back_card button{
+    background-color: black;
+    border: 0.2vw solid white;
+    color: white;
+    
+    cursor: pointer;
+}
+.yellow .back_card button{
+    background-color: #fed841;
+    border: 0.2vw solid black;
+    color: black;
+    
+    cursor: pointer;
+}
+.yellow .back_card button:hover{
+    background-color: black;
+    border: 0.2vw solid #fed841;
+    color: #fed841;
+}
+.pink .back_card button{
+    background-color: #e7335d;
+    border: 0.2vw solid white;
+    color: white;    
+    cursor: pointer;
+}
+.pink .back_card button:hover{
+    background-color: white;
+    border: 0.2vw solid #e7335d;
+    color: #e7335d;
+}
+
+
+.back_card button{
+    margin-top: 5.5vw;
+    margin-left: 14vw;
+    width: 9vw;
+    height: 2.5vw;   
+    font-size: 1.3vw;
+}
+
+.aa{
+    z-index: 1;
+}
+.bb{
+    z-index: 2;
+}
+.cc{
+    z-index: 3;
+}
+.dd{
+    z-index: 4;
+}
+.ee{
+    z-index: 5;
+}
+.ff{
+    z-index: 6;
+}
+.gg{
+    z-index: 7;
+}
+.hh{
+    z-index: 8;
+}
+
+
+
+

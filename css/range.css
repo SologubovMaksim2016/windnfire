@@ -1,0 +1,84 @@
+#container{
+  width: 20%;
+  margin-left: 5.43vw;
+  margin-top: 0.54vw;
+}
+
+.range {
+  -webkit-appearance: none;
+  /* width: 25%; */
+  height: 4.5vw;
+  background: white;
+  margin-top: 0.2vw;
+  border-radius: 2.5vw;
+  outline-color: black;
+}
+#range-time{
+  width: 39vw;
+}
+#container-time{
+  margin-top: 0.56vw;
+  margin-left: 5.16vw;
+}
+/* #container-budget{  
+   width: 20vw;
+} */
+
+
+/* more  */
+/* only for compatibility on browsers  */
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 5vw;
+  background: #e7335d;
+  cursor: pointer;
+  border: 1.4vw solid black;
+  margin-top: -0.6vw;
+}
+#range-budget{
+  width: 20vw;
+  margin-top: 3.24vw;
+  margin-left: 2.35vw;
+}
+
+.range::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 5vw;
+  background: #e7335d;
+  cursor: pointer;
+  border: 1.4vw solid black;
+  margin-top: -0.5vw;
+  }
+  .range::-moz-focus-outer{
+      border: 0;
+  }
+input[type=range]::-webkit-slider-runnable-track {  
+  width: 100%;
+  cursor: pointer; 
+  border-radius: 2.5vw; 
+}
+#range-budget::-webkit-slider-runnable-track{
+  height: 1.6vw;
+}
+#container-time input[type=range]::-webkit-slider-runnable-track{
+  height: 4.6vw;
+}
+#budget-track{
+  position: absolute;
+  margin-top: 3.66vw;
+  margin-left: 5.43vw;
+  width: 16.75vw;
+}
+#range-budget::-webkit-slider-thumb{
+  width: 4.5vw;
+  height: 4.5vw;
+  border: 1.0vw solid black;
+  margin-top: -2.2vw;
+  z-index: 2;
+  margin-left: 1vw;
+  position: relative;
+}

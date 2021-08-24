@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="381" height="673" viewBox="0 0 381 673">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.993" y1="0.5" x2="0.006" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1180cf"/>
+      <stop offset="1" stop-color="#040681"/>
+    </linearGradient>
+  </defs>
+  <g id="windows_98_box" data-name="windows 98 box" transform="translate(-513 -288)">
+    <g id="Прямоугольник_149" data-name="Прямоугольник 149" transform="translate(516 291)" fill="#519fac" stroke="#e1f3fa" stroke-width="3">
+      <rect width="375" height="667" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="378" height="670" fill="none"/>
+    </g>
+    <rect id="Прямоугольник_150" data-name="Прямоугольник 150" width="375" height="30" transform="translate(516 291)" stroke="#e1f3fa" stroke-width="2" fill="url(#linear-gradient)"/>
+    <g id="close_button" data-name="close button" transform="translate(860.711 295.241)">
+       </g>
+    
+  </g>
+</svg>

@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- <link rel="stylesheet" href="./blog/css/blog.css">    -->
+    <link rel="stylesheet" href="css/word.css" />
+    <link rel="stylesheet" href="css/word_new.css" />
+    <link rel="stylesheet" href="./css/blog.css">
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="css/mySlider.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+
+    <style type="text/css">
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/Womby.eot");
+            /* EOT file for IE */
+        }
+
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/Womby.ttf")
+                /* TTF file for CSS3 browsers */
+        }
+
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/WombyRUSbyDaymarius.eot")
+                /* EOT file for IE */
+        }
+
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/WombyRUSbyDaymarius.ttf")
+                /* TTF file for CSS3 browsers */
+        }
+
+        @font-face {
+            font-family: Poppins;
+            src: url("./fonts/Poppins-Regular.eot")
+                /* EOT file for IE */
+        }
+
+        @font-face {
+            font-family: Poppins;
+            src: url("./fonts/Poppins-Regular.ttf")
+                /* TTF file for CSS3 browsers */
+        }
+
+        .MAINBOX {
+            overflow-x: hidden !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="MAINBOX">
+        <div class="container">
+
+
+            <div class="lang">
+                <div id="en" class="lang-item show"><span>EN</span></div>
+                <div id="ru" class="lang-item"><span>RU</span></div>
+                <div id="cz" class="lang-item"><span>CZ</span></div>
+            </div>
+
+            <div class="gamburger">
+                <img id="gamburger" src="gamburger.png" alt="gamburger" srcset="./svg/blog/gamburger.svg">
+            </div>
+            <div class="mail">
+                <img id="mail" src="mail.png" alt="mail" srcset="./svg/blog/mail.svg" onclick="contactSubmit()">
+            </div>
+            <div class="upArrow">
+                <img id="upArrow" src="upArrow.png" alt="upArrow" onclick="topFunction()"
+                    srcset="./svg/blog/upArrow.svg">
+            </div>
+
+
+            <div class="arrows-container">
+                <div class="arrows">
+                    <div class="left-arrow">
+                        <div class="left-arrow-title">
+                            <!-- THE BROWN -->
+                        </div>
+                        <div class="left_count">
+                            <a href="/blog/1"><img id="arrow_prev" alt="" srcset="./svg/blog/left-arrow.svg"></a>
+                        </div>
+                    </div>
+                    <!-- 
+            <div id="center-logo" class="center-logo"> 
+              <a  href="/"><img id="logo"  alt="fire" src="./svg/blog/fire white.gif"></a>    
+            </div> -->
+
+
+                    <div class="right-arrow">
+                        <div class="right-arrow-title">
+                            <!-- THE QUICK -->
+                        </div>
+                        <div class="right_count">
+                            <a href="/blog/1"> <img id="arrow_next" alt="" srcset="./svg/blog/right_arrow.svg"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="menu">
+                <div class="close">
+                    <img id="close" src="close.png" alt="close" srcset="./svg/blog/close.svg">
+                </div>
+                <div class="up_menu-container">
+                    <div class="accordeon-container">
+                        <div class="set first">
+                            <a id="home" href="/">
+                                <p>HOME</p>
+                            </a>
+                            <div id="sub-menu" class="content">
+                                <p><a href="/#tipe">TIPE</a></p>
+                                <p><a href="/#time_frames">TIME FRAMES</a></p>
+                                <p><a href="/#region">REGION</a></p>
+                                <p><a href="/#budget">BUDGET</a></p>
+                                <p><a href="/#background">BACKGROUND</a></p>
+                                <p><a href="/#services">SERVICES</a></p>
+                                <p><a href="/#contact">CONTACT</a></p>
+                                <p><a href="/#articles">ARTICLES</a></p>
+                                <p><a href="/#portfolio">PORTFOLIO</a></p>
+                                <p><a href="/#serviceList">SERVICE LIST</a></p>
+                                <p><a href="/#chat">COMMUNITY</a></p>
+                                <p><a href="/#team">TEAM</a></p>
+                            </div>
+                        </div>
+                        <div class="set">
+                            <a href="/portfolio">
+                                <p>PORTFOLIO</p>
+                            </a>
+                        </div>
+                        <div class="set">
+                            <a href="/services">
+                                <p>SERVICES</p>
+                            </a>
+                        </div>
+                        <div class="set end">
+                            <a href="/blog">
+                                <p>BLOG</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="content-container" class="content-container">
+
+                <div class="title-start"> <a name="post0"></a>
+                    <div id="center-logo" class="center-logo">
+                        <a href="/"><img id="logo" alt="fire" src="./svg/blog/fire white.gif"></a>
+                    </div>
+                </div>
+
+
+                <div class="title">
+                    WINDNFIRE — MARKETING AGENCY THAT WORKS WITH HARD TO MONETIZE PROJECTS
+                </div>
+                <div class="foto">
+                    <img class="foto-block" alt="" srcset="./svg/blog/post0.png">
+                </div>
+                <div class="text-content word">
+                    <div class="c21">
+                        <section class="ru">
+                            <p class="c3"><span class="c9">DEFI В СФЕРЕ МАРКЕТИНГА</span></p>
+                            <p class="c3"><span class="c4">Как собственный токен может помочь маркетинговому агентству
+                                    гарантировать снизить цену своих услуг и гарантировать их высокое качество?</span>
+                            </p>
+                            <p class="c3"><span class="c4">&nbsp;</span></p>
+                            <p class="c3"><span class="c2">DeFi рынок активно развивается – проекты, гарантирующие
+                                    предоставления финансовых услуг прозрачно, анонимно и на максимально выгодных
+                                    условиях набирают все больше популярности. На текущий момент в децентрализованных
+                                    протоколах заблокировано уже более 80 миллиардов долларов, и эта сумма быстро
+                                    растет. DeFi помогает сделать процесс пользования любых сервисов более
+                                    демократичным, и мы подумали о том, что реализовать похожий проект в сфере
+                                    маркетинга.</span></p>
+                            <p class="c3 c13"><span class="c2">В настоящий момент существует более 1000 различных DeFi
+                                    решений, согласно данным сайта DeFiPrime, но сервисов, реализуемых в области
+                                    маркетинга - нет. При этом, подобный проект мог бы быть интересен как компаниям, как
+                                    и частным пользователям, заинтересованным в росте стоимости монеты, в которую они
+                                    вложились… Как это работает – расскажем ниже.</span></p>
+                            <p class="c3"></p>
+                            <p class="c3"><span class="c4">WNF токен – монета для создателей и холдеров проектов</span>
+                            </p>
+                            <p class="c3"><span class="c2">Большинство проектов сегодня предлагают своим токенхолдерам
+                                    возможность заработать дополнительные монеты за холдинг, но что, если держатели
+                                    монет получат в качестве награды не еще больше токенов, а услуги, которые
+                                    востребованы всеми без исключения проектами?</span></p>
+                            <p class="c3 c13"><span class="c2">Речь идет о маркетинге. Механизм предельно простой: вы
+                                    холдите токены WNF и, в зависимости объема монет, который вы храните, получаете
+                                    право воспользоваться бесплатными сервисами агентства. Это может быть публикация
+                                    статей по вашему заказу в СМИ, публикация постов у лидеров мнений, диджитал реклама,
+                                    публикации СММ… Такие услуги выгодны все и использовать их можно для продвижения
+                                    своих проектов (тех, в которых заинтересованы холдеры); отдельных персон (хотите
+                                    стать лидером мнений в своем вопросе – пожалуйста, используйте бесплатные услуги для
+                                    повышения своего уровня экспертности) и так далее. При таком раскладе токены выгодно
+                                    держать как частным пользователям, так и проектам (вы можете использовать их для
+                                    собственного продвижения).</span></p>
+                            <p class="c3 c13"><span class="c2">Еще одно направление получения подобных токенов –
+                                    Airdrop, но отличающийся от традиционного. &nbsp;Любой проект может привлекать своё
+                                    сообщество к участию в наших аирдроп и зарабатывать токены. Чем больше участников и
+                                    чем активнее сообщество – тем больше монет можно заработать, просто выполняя
+                                    несложные задания (как квесты). А чем больше монет – тем больше возможностей для
+                                    продвижения собственного проекта. Если вы блогер или инфлюенсер – тем лучше.
+                                    Мотивируйте свою аудиторию к сотрудничеству с WNF и участию в дропах и используйте
+                                    заработанные токены для организации коллабораций и наращивания аудитории.</span></p>
+                            <p class="c3"></p>
+                            <p class="c3"><span class="c4">NFT токен WNF</span></p>
+                            <p class="c3"><span class="c2">Невзаимозаменяемые токены – популярный сегодня вид
+                                    криптографических токенов, которых просто захватил мир. Каждый экземпляр таких
+                                    токенов уникален и не может быть обменен или замещен другим аналогичным токеном.
+                                    Сегодня на рынке финансовые гении уступили место художникам, журналистам, музыкантам
+                                    – словом, обладателям авторских прав на те или иные объекты. Но что, если, такой
+                                    токен будет представлять собой не право пользователя на цифровую копию того или
+                                    иного объекта искусства, а его право на получение скидки в том же маркетинговом
+                                    агентстве? Рассмотрим подробнее:</span></p>
+                            <p class="c3"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Агентство реализует услуги в разных
+                                    областях рынка, например: SMM-маркетинг, digital-реклама, продвижение в СМИ, работа
+                                    с лидерами мнений… В рамках проекта, выпускается карточка (NFT-токен), дающий право
+                                    своему владельцу на получение скидки на услуги в данном секторе рынка. Чем больше
+                                    скидка – тем реже токен. Приобретя такой токен, держатель получает право на
+                                    получение скидки на услуги. </span></p>
+                            <p class="c3"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Итак, на
+                                    каждую услугу, оказываемую агентство, выпускается несколько NFT-карточек: золотая,
+                                    серебряная и бронзовая. Каждая из них дает право на получение скидки на данную
+                                    услугу:</span></p>
+                            <ul class="c14 lst-kix_h6sj4h50lspm-0 start">
+                                <li class="c3 c10 li-bullet-0"><span class="c2">Золотая карточка - 30% </span></li>
+                                <li class="c3 c10 li-bullet-0"><span class="c2">Серебряная карточка - 20% </span></li>
+                                <li class="c3 c10 li-bullet-0"><span class="c2">Бронзовая карточка - 10%
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                            </ul>
+                            <p class="c0"><span class="c2">Эта карточка - вечная. Скидка тоже. То есть, владелец может
+                                    использовать свое право многократно, а в случае, когда для него оно становится не
+                                    актуальным – может передать его третьему лицу.</span></p>
+                            <p class="c0"><span class="c7">- Например, такая услуга, как шиллинг - любое количество
+                                    подобных услуг будет для клиента рассчитываться со скидкой, соответствующей
+                                    карточке. К тому же, владельцы карточек получают от агентства-эмитента дополнительно
+                                    бонусные услуги: консультации, дизайн, разработку оформления для социальных сетей, -
+                                </span><span class="c7">говорит CMO агентства Ник Кристов.</span><span
+                                    class="c2 c19">&nbsp;</span></p>
+                            <p class="c0"><span class="c2">Такие карточки покупаются за токены WNF, что в конечном итоге
+                                    положительно будет сказываться на их стоимости. </span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c3"><span class="c4">Почему использовать WNF будет выгодно?</span></p>
+                            <p class="c3"><span class="c2">Стекинг токенов будет вознаграждаться дополнительной скидкой
+                                    на услуги агентства. Чем больше монет у вас на счетах и чем дольше вы храните их на
+                                    кошельке, тем выгоднее сотрудничество с WNF будет для владельца монет. </span></p>
+                            <p class="c3"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Чем больше
+                                    монет на кошельке, чем дольше они хранятся, тем больше скидка на услуги агентства
+                                    доступна компании. Все зависит от числа монет WNF и срока стекинга их на кошельке.
+                                    При хранении токенов за каждый месяц пользователь удваивает скидку на 10% от ее
+                                    значения удваивается.</span></p>
+                            <p class="c3"><span class="c2">&nbsp;Таким образом можно экономить 80 или даже 90% стоимости
+                                    услуг. Максимально возможный объем скидки на стекинге - 10%. </span></p>
+                            <p class="c0"><span class="c2">То есть, общий размер скидки рассчитывается по формуле:
+                                </span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c18"><span class="c15">X = A + A/10*t </span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c3"><span class="c7 c17">где А - объем скидки по карточке, а t - период холдинга
+                                    токенов в месяцах </span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c0"><span class="c2">Все это сделает холдинг токенов WNF выгодным для
+                                    пользователей что, в конечном итоге, положительно скажется на стоимости монеты.
+                                    Ограниченная эмиссия монет также будет способствовать в долгосрочной перспективе
+                                    формированию дефицита - держателями монет станут в основном клиенты компании. То
+                                    есть, это ограниченное, сплоченное сообщество, заинтересованное в качественном
+                                    использовании монет, улучшении качества сервиса и развитии проекта. Пользователи
+                                    смогут общаться, обсуждая новости рынка, выбирая проекты, которые кажутся им
+                                    интересными. WNF планирует развивать сообщество, предлагая для обсуждения темы.
+                                    публикуя инсайдерскую информацию и выдвигая на обсуждение проекты, которые
+                                    продвигаются в WNF или могут получить от агентства маркетинговую поддержку. </span>
+                            </p>
+                            <p class="c3"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Использование таких токенов, которые
+                                    на начальном этапе в любом случае будут стоить недорого, делает более выгодным
+                                    сотрудничество с компанией-эмитентом монет, предлагая возможности как для экономии
+                                    средств, так и для заработка впоследствии (такой токен вполне можно перепродать,
+                                    например).</span></p>
+                            <ul class="c14 lst-kix_2q1ukyvvcg5g-0 start">
+                                <li class="c3 c10 li-bullet-0"><span class="c7">Если заказчик планирует воспользоваться
+                                        сразу несколькими услугами нашего агентства, то ему выгодно купить карточку или
+                                        купить токены WNF, для того чтобы получить максимальную скидку и сэкономить на
+                                        оплате услуг, - </span><span class="c7">говорит Ник Кристов.</span><span
+                                        class="c2">&nbsp;- Также использование токенов будет максимально выгодно тем
+                                        заказчикам, которые планируют долгосрочное сотрудничество, ведь с течением
+                                        времени их скидка будет только расти.</span></li>
+                            </ul>
+                            <p class="c3"><span class="c2">&nbsp;</span></p>
+                            <p class="c3"><span class="c4">Чем обеспечивается ценность таких токенов?</span></p>
+                            <p class="c3"><span class="c2">Во-первых, уровнем агентства которое реализует проект. Имея в
+                                    своем портфеле десятки успешных проектов, работая на репутацию и продвигая своих
+                                    клиентов, компания обеспечивает ценность монеты. Чем успешнее агентство – тем
+                                    востребованнее токен – тем выше его цена.</span></p>
+                            <p class="c3"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Эта схема позволяет потенциальным
+                                    клиентам быть уверенными в качестве оказываемых услуг. Компания-эмитент будет
+                                    заинтересована в максимально качественном выполнении своих обязательств, чтобы не
+                                    обвалить цену токена. Аирдропы и другие активности позволят привлекать к работе
+                                    блогеров, ютуберов, лидеров мнений, которые также будут мотивировать свою аудиторию
+                                    участвовать в развитии проекта, тем самым работая в интересах потенциальных клиентов
+                                    агентства WNF.</span></p>
+                            <p class="c3"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Это тот самый случай, когда схема
+                                    WIN-WIN работает в чистом виде. Сотрудничество с подобной компанией выгодно всем:
+                                    другим крипто-проектам, получающим возможность раскручиваться бесплатно или почти
+                                    бесплатно; токенхолдерам, действующим в интересах своих монет; публичным личностям и
+                                    экспертам, получающим возможность развиваться и получать бесплатно услуги, которые
+                                    стоят денег… Потенциальные клиенты агентства получают гарантии высокого качества
+                                    сервисов, а сама компания – интерес со стороны потенциальных заказчиков и
+                                    возможность использовать на благо развития рынка все те технологии, продвижением
+                                    которых сегодня занимается.</span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                        </section>
+
+
+                        <section class="en">
+                            <p class="c5"><span class="c9">DEFI IN MARKETING</span></p>
+                            <p class="c5"><span class="c4">HOW CAN A CUSTOM TOKEN HELP A MARKETING AGENCY TO ENSURE THE
+                                    REDUCE OF THE PRICE OF THEIR SERVICES AND TO ENSURE THEIR HIGH QUALITY?</span></p>
+                            <p class="c5"><span class="c4">&nbsp;</span></p>
+                            <p class="c5"><span class="c2">The DeFi market is actively developing - projects that
+                                    guarantee the provision of financial services transparently, anonymously and on the
+                                    most favourable terms are gaining more and more popularity. As of the current date
+                                    more than $80 billion has been blocked in decentralized protocols, and this amount
+                                    is growing rapidly. DeFi helps make the process of using any services more
+                                    democratic, and we thought about implementation of a similar project in the field of
+                                    marketing.</span></p>
+                            <p class="c5 c13"><span class="c2">Currently, there are over 1000 different DeFi solutions
+                                    according to the DeFiPrime website, but there are no services implementing in the
+                                    marketing sphere. At the same time, such project could be interesting for both
+                                    companies and private users interested in the growth of the value of the coin in
+                                    which they have invested ... How it works - we will tell you below.</span></p>
+                            <p class="c5"><span class="c2">&nbsp;</span></p>
+                            <p class="c5"><span class="c4">WNF TOKEN IS A COIN FOR CREATORS AND HOLDERS OF
+                                    PROJECTS</span></p>
+                            <p class="c5"><span class="c2">Most projects today offer their token holders the opportunity
+                                    to earn additional coins for the holding, but what if the coin holders receive as a
+                                    reward not even more tokens, but services that are in demand by all projects without
+                                    exception?</span></p>
+                            <p class="c5 c13"><span class="c2">This is about marketing. The mechanism is extremely
+                                    simple: you hold WNF tokens and depending on the number of coins you keep, you get
+                                    the right to use the agency's free services. This can be the publication of articles
+                                    by your order in the mass media, the publication of posts at opinion leaders,
+                                    digital advertising, publications of the SMM ... Such services are beneficial to
+                                    everyone, and you can use them to promote your projects (those in which the holders
+                                    are interested); individuals (if you want to become an opinion leader in your issue
+                                    - please use free services to increase your level of expertise) and so on. In this
+                                    situation, it is beneficial to keep tokens for both private users and projects (you
+                                    can use them for your own promotion).</span></p>
+                            <p class="c5 c13"><span class="c2">One more direction for obtaining such tokens is Airdrop,
+                                    but different from the traditional one. Any project can involve its community in
+                                    participating in our airdrop and earn tokens. The more participants and the more
+                                    active the community, the more coins you can earn by simply completing easy tasks
+                                    (like quests). And the more coins – the more opportunities to promote your own
+                                    project. If you are a blogger or influencer, so much the better. Motivate your
+                                    audience to cooperate with WNF and participate in drops and use the earned tokens to
+                                    organize collaborations and grow your audience.</span></p>
+                            <p class="c5"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+                            <p class="c5"><span class="c4">NFT token WNF</span></p>
+                            <p class="c5"><span class="c2">Non-fungible tokens are a popular type of cryptographic
+                                    tokens that have just caught the world. Each instance of such tokens is unique and
+                                    cannot be exchanged or replaced with another similar token. Today, on the market,
+                                    financial geniuses have given way to artists, journalists, musicians - in a word,
+                                    copyright holders to these or those objects. But what if such a token does not
+                                    represent the user's right to a digital copy of this or that art object, but his
+                                    right to receive a discount at the same marketing agency? Let's take a closer
+                                    look:</span></p>
+                            <p class="c5"><span class="c2">&nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;The agency implements
+                                    services in different market areas, for example: SMM marketing, digital advertising,
+                                    promotion in the media, working with opinion leaders ... Within the framework of the
+                                    project, a card (NFT token) is issued, which entitles its owner to receive a
+                                    discount on services in this market sector. The higher the discount, the less
+                                    frequent the token. By purchasing such a token, the holder gets the right to receive
+                                    a discount on services</span></p>
+                            <p class="c5"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So, for each service provided by the
+                                    agency, several NFT cards are issued: gold, silver and bronze. Each of them gives
+                                    the right to receive a discount on this service:</span></p>
+                            <p class="c5 c11"><span class="c7">●</span><span class="c6">&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">Gold card -
+                                    30%</span></p>
+                            <p class="c5 c11"><span class="c7">●</span><span class="c6">&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">Silver card
+                                    - 20%</span></p>
+                            <p class="c5 c11"><span class="c7">●</span><span class="c6">&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">Bronze card
+                                    - 10%</span></p>
+                            <p class="c5 c8"><span class="c2">This card is timeless. Discount is also. That is, the
+                                    owner can use his right repeatedly, and in the case that it becomes irrelevant for
+                                    him, he can transfer it to a third party.</span></p>
+                            <p class="c5 c8"><span class="c7">- For example, such a service as a shilling - any number
+                                    of such services will be calculated for the client with a discount corresponding to
+                                    the card. In addition, cardholders receive additional bonus services from the
+                                    issuing agency: consultations, design, development of design for social networks, -
+                                </span><span class="c7 c16">Nik Kristov, WNF marketing agency CMO says.</span></p>
+                            <p class="c5 c8"><span class="c2">Such cards are bought for WNF tokens, which finally will
+                                    have a positive effect on their value.</span></p>
+                            <p class="c5"><span class="c2">&nbsp;</span></p>
+                            <p class="c5"><span class="c4">WHY TO USE WNF WELL GIVE BENEFITS?</span></p>
+                            <p class="c5"><span class="c2">Staking of tokens will be rewarded with an additional
+                                    discount on agency services. The more coins you have in your accounts and the longer
+                                    you keep them in your wallet, the more profitable cooperation with WNF will be for
+                                    the owner of the coins. &nbsp;</span></p>
+                            <p class="c5 c8"><span class="c2">The more coins on the wallet, the longer they are stored,
+                                    the more discount on agency services is available to the company. It all depends on
+                                    the number of WNF coins and the staking period on their wallet. When storing tokens
+                                    for each month, the user doubles the discount by 10% of its value. Thus, you can
+                                    save 80 or even 90% of the cost of services. The maximum possible amount of discount
+                                    on staking is 10%.</span></p>
+                            <p class="c5 c8"><span class="c2">That is, the total amount of the discount is calculated
+                                    using the formula:</span></p>
+                            <p class="c5"><span class="c2">&nbsp;</span></p>
+                            <p class="c20"><span class="c15">X = A + A/10*t</span></p>
+                            <p class="c5"><span class="c2">&nbsp;</span></p>
+                            <p class="c5"><span class="c17 c7">where А - discount amount on the card, and t - token
+                                    holding period in months</span></p>
+                            <p class="c5 c8"><span class="c2">&nbsp;</span></p>
+                            <p class="c5 c8"><span class="c2">All this will make the holding of WNF tokens profitable
+                                    for users, which, in the end, will have a positive effect on the value of the coin.
+                                    The limited emission of coins will also contribute to the formation of a deficit in
+                                    the long term - mainly the company's customers will become coin holders. That is, it
+                                    is a limited, close-knit community interested in the qualitative use of coins,
+                                    improving the quality of service and developing the project. Users will be able to
+                                    communicate, discussing market news, choosing projects that seem interesting to
+                                    them. WNF plans to develop the community by proposing topics for discussion,
+                                    publishing inside information and proposing projects to discuss that are promoted by
+                                    WNF or may receive marketing support from the agency.</span></p>
+                            <p class="c5"><span class="c2">&nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;The use of such tokens,
+                                    which at the initial stage will be not expensive in any case, makes it more
+                                    profitable to cooperate with a coin issuing company, offering opportunities both for
+                                    saving money and for earning money later (such a token can be resold, for
+                                    example).</span></p>
+                            <p class="c5 c11"><span class="c7">-</span><span class="c6">&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7">If the
+                                    customer plans to use several services of our agency at once, then it is profitable
+                                    for him to buy a card or buy WNF tokens in order to get the maximum discount and
+                                    save on payment for services, - </span><span class="c16 c7">Nik Kristov, WNF
+                                    marketing agency CMO says</span><span class="c2">. - Also, the use of tokens will be
+                                    most beneficial to those customers who plan long-term cooperation, because over
+                                    time, their discount will only grow.</span></p>
+                            <p class="c5"><span class="c2">&nbsp;</span></p>
+                            <p class="c5"><span class="c4">What ensures the value of such tokens?</span></p>
+                            <p class="c5"><span class="c2">Firstly, the level of the agency that implements the project.
+                                    With dozens of successful projects in its portfolio, working for its reputation and
+                                    promoting its customers, the company provides the value of the coin. The more
+                                    successful the agency is - the more in demand the token - the higher its
+                                    price.</span></p>
+                            <p class="c5"><span class="c2">&nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;This scheme allows
+                                    potential clients to be confident in the quality of the services provided. The
+                                    issuing company will be interested in the highest qualitative fulfilment of its
+                                    obligations so as not to collapse the price of the token. Airdrops and other
+                                    activities will allow you to attract for work bloggers, youtubers, opinion leaders,
+                                    who will also motivate their audience to participate in the development of the
+                                    project, thereby working in the interests of potential clients of the WNF
+                                    agency</span></p>
+                            <p class="c5"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                                    This is the case when the WIN-WIN scheme works in its purest form. Cooperation with
+                                    such company is beneficial to everyone: to other crypto-projects that get the
+                                    opportunity to boost for free or almost free of charge; to token-holders acting in
+                                    the interests of their coins; to public figures and experts who get the opportunity
+                                    to develop and receive free services that cost money ... Potential clients of the
+                                    agency receive guarantees of high quality services, and the company itself receives
+                                    interest from potential customers and the opportunity to use for the benefit of
+                                    market development all those technologies that are being promoted today.</span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c3"><span class="c2">&nbsp;</span></p>
+                            <p class="c1"><span class="c12"></span></p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="title"> <a name="post1"></a>
+                    BLOCKCHAINUA WINDNFIRE WILL BE AN ORGANIZATIONAL PARTNER OF BLOCKCHAINUA
+                </div>
+                <div class="foto">
+                    <img class="foto-block" alt="" srcset="./svg/blog/post1.png">
+                </div>
+                <div class="text-content word">
+
+
+                    <div class="c21">
+
+                        <section class="ru">
+                            <!-- <p class="c3"><span class="c4">WINDNFIRE выступит организационным партнером </span><span class="c0 c5">BLOCKCHAINUA</span></p> -->
+                            <p class="c3"><span class="c2">&nbsp;</span></p>
+                            <p class="c3"><span class="c2">Работа девятой международной конференции </span><span
+                                    class="c2">BlockchainUA, которая пройдет 19 мая в Киеве и соберет сильнейшее
+                                    блокчейн сообщество в Украине и Европе, пройдет при организационной поддержке
+                                    команды молодого, амбициозного, но уже успевшего добиться впечатляющих результатов
+                                    Crypto marketing Agency </span><span class="c2">WindnFire (WnF).</span></p>
+                            <p class="c3"><span class="c0 c5">&nbsp;</span></p>
+                            <p class="c3"><span class="c2">Все члены команды WindnFire имеют большой и разнообразный
+                                    опыт работы в криптопроектах, связанный как с разработкой протоколов, подготовкой и
+                                    проведением ICO, так и с привлечением инвестиций, в том числе, и со стороны крупных
+                                    венчурных фондов, таких, как Tinkoff Digital.</span></p>
+                            <p class="c3"><span class="c2">Стратегия агентства заключается в достижении максимальной
+                                    конверсии с минимальными затратами. Руководство WnF уверенно: главное в работе
+                                    коммуникационного агентства – это не максимальный охват, а индивидуальный подход к
+                                    каждому клиенту клиента.</span></p>
+                            <p class="c3"><span class="c2">Отличительной особенностью WindnFire является молодость и
+                                    задор, органично сочетающиеся с богатым деловым опытом, которые позволяют не только
+                                    быстро предлагать интересные идеи и концепты, но и оперативно воплощать их в
+                                    жизнь.</span></p>
+                            <p class="c3"><span class="c2">Уникальность предложения WnF заключается в наличии
+                                    собственных концептов и разработок, таких, как краудшиллинг – партизанский
+                                    маркетинг, внедренный в Telegram и Twitter. Вместо стандартного шиллинга, который по
+                                    сути представляет собой спам-рассылку одного и того же сообщения, агентство
+                                    симулирует живой диалог между людьми, активно общается и показывает, насколько
+                                    интересен тот или иной проект. Это достигается за счет поддержки и ведения большого
+                                    количество аккаунтов в социальных сетях и на профильных площадках.</span></p>
+                            <p class="c3"><span class="c2">Кроме того, </span><span class="c2">Crypto marketing Agency
+                                </span><span class="c2">WindnFire располагает обширной базой инфлюенсеров, в том числе,
+                                    имеет выходы на «звезд» первой величины (например, Ivan on Tech), поддерживает
+                                    партнерские отношения с целым рядом профильных СМИ, в том числе Cointelegraph, и
+                                    может поддержать листинги на платформах CoinsBit, CMS и других.</span></p>
+                            <p class="c3"><span class="c2">Штат агентства состоит из большого числа собственных
+                                    сотрудников: разработчиков, дизайнеров, копирайтеров, комьюнити-менеджеров. Это
+                                    позволяет WnF успешно реализовывать проекты любой сложности, в том числе
+                                    непосредственно связанные с разработкой.</span></p>
+                            <p class="c3"><span class="c2">Офисы агентства расположены в Чехии (Чешска Липа), Украине
+                                    (Киев) и Германии (Дрезден).</span></p>
+                            <p class="c3"><span class="c2">В ближайших планах WindnFire запуск собственного токена,
+                                    который даст возможность партнерам агентства приобретать его маркетинговые услуги, в
+                                    том числе услуги инфлюенсеров, с хорошим дисконтом.</span></p>
+                            <p class="c3"><span class="c2">WindnFire – это открытое и всегда готовое к общению агентство
+                                    коммуникационного крипто-маркетинга, команда которого ставит перед собой самые
+                                    высокие цели и задачи и стремится двигать индустрию вперед!</span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                        </section>
+
+                        <section class="en">
+                            <!-- <p class="c5"><span class="c4">BLOCKCHAINUA</span><span class="c4">WINDNFIRE WILL BE AN ORGANIZATIONAL PARTNER OF BLOCKCHAINUA</span></p> -->
+                            <p class="c3"><span class="c2">&nbsp;</span></p>
+                            <p class="c3"><span class="c2">The work of the ninth international conference BlockchainUA,
+                                    which will be held on May 19 in Kiev and will bring together the strongest
+                                    blockchain community in Ukraine and Europe, will be held with the organizational
+                                    support of a team of a young, ambitious, but already managed to achieve impressive
+                                    results, Crypto marketing Agency WindnFire (WnF).</span></p>
+                            <p class="c3"><span class="c0 c5">&nbsp;</span></p>
+                            <p class="c3"><span class="c2">All members of the WindnFire team have a wide and varied work
+                                    experience in crypto projects related both to the development of protocols,
+                                    preparation and conduction of ICO, and to attracting investments, including from
+                                    large venture capital funds such as Tinkoff Digital.</span></p>
+                            <p class="c3"><span class="c2">The strategy of the agency is to achieve maximum conversion
+                                    at the lowest cost. The management of WnF is sure: the main thing in the work of a
+                                    communication agency is not the maximum coverage, but an individual approach to each
+                                    client’s client.</span></p>
+                            <p class="c3"><span class="c2">A distinctive feature of WindnFire is youth and enthusiasm,
+                                    organically combined with rich business experience, that allow not only to offer
+                                    interesting ideas and concepts quickly, but to implement them quickly too.</span>
+                            </p>
+                            <p class="c3"><span class="c2">The uniqueness of the WnF proposal lies in the presence of
+                                    its own concepts and developments, such as crowdshilling - guerrilla marketing
+                                    implemented in Telegram and Twitter. Instead of a standard shilling, which is
+                                    essentially a spam mailing of the same message, the agency simulates a live dialogue
+                                    between people, actively communicates and shows how interesting a particular project
+                                    is. This is achieved by supporting and maintaining a large number of accounts on
+                                    social networks and on field-oriented platforms.</span></p>
+                            <p class="c3"><span class="c2">In addition, Crypto marketing Agency WindnFire has an
+                                    extensive base of influencers, including access to top “stars” (for example, Ivan on
+                                    Tech), maintains partnerships with a number of field-oriented mass media, including
+                                    Cointelegraph, and can support listings on platforms CoinsBit, CMS and
+                                    others.</span></p>
+                            <p class="c3"><span class="c2">The agency's staff consists of a large number of its own
+                                    employees: developers, designers, copywriters, community managers. This allows WnF
+                                    to implement projects of any complexity successfully, including those directly
+                                    related to development.</span></p>
+                            <p class="c3"><span class="c2">Agency offices are located in the Czech Republic (Ceska
+                                    Lipa), Ukraine (Kiev) and Germany (Dresden).</span></p>
+                            <p class="c3"><span class="c2">WindnFire plans to launch its own token in the nearest
+                                    future, which will enable the agency's partners to purchase its marketing services,
+                                    including the services of influencers, at a good discount.</span></p>
+                            <p class="c3"><span class="c2">WindnFire is an open and always ready-to-communicate
+                                    crypto-marketing communication agency whose team sets the highest goals and
+                                    objectives for itself and strives to move the industry forward!</span></p>
+                            <p class="c3"><span class="c2">&nbsp;</span></p>
+                            <p class="c6"><span class="c7">&nbsp;</span></p>
+                            <p class="c1"><span class="c2"></span></p>
+                            <p class="c3"><span class="c2">&nbsp;</span></p>
+                            <p class="c8"><span class="c7"></span></p>
+                        </section>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="follow-container">
+                    <button id="submit" type="button" onClick="window.open('https://t.me/wnf_agency')">FOLLOW US IN
+                        TELEGRAM</button>
+
+                </div>
+                <div class="social-container">
+                    <a href="https://www.facebook.com/windnfire.agency/"><input id="m3-tg" type="image"
+                            src="./svg/blog/facebook.svg" /></a>
+                    <a href="https://www.instagram.com/windnfire.agency/?utm_medium=copy_link"><input id="m3-inst"
+                            type="image" src="./svg/blog/instagram.svg" /></a>
+                    <a href="https://twitter.com/wnf_agency"><input id="m3-link" type="image"
+                            src="./svg/blog/twitter.svg" /></a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="modal"></div>
+    <script>
+        $(document).ready(function () {
+            let content = $(".word")[0].innerHTML
+            for (let i = 0; i < 300; i++) {
+                content = content.replace("&nbsp;", "")
+            }
+            $(".word")[0].innerHTML = content
+        });
+
+        //  function closeModal(){
+        //     $("#modal")[0].style.display = "none";          
+        // }
+        // function sendMail(){
+        //   $("#modal")[0].style.display = "block";      
+        // }       
+        function rockSubmit(event) {
+            if (label_tel.value.length < 3) {
+                label_tel.style.border = " 8px solid #e7335d "
+                setTimeout(() => {
+                    label_tel.style.border = " 8px solid transparent "
+                }, 300);
+                setTimeout(() => {
+                    label_tel.style.border = " 8px solid #e7335d "
+                }, 450);
+                setTimeout(() => {
+                    label_tel.style.border = " 8px solid transparent "
+                }, 750);
+            }
+            if (label_tel.value.length < 3) return
+            $(".get-container")[0].style.marginLeft = "-200vw"
+            $(".but-container")[0].style.marginLeft = "-200vw"
+            $(".thank")[0].style.opacity = "1"
+            $(".thank")[0].style.zIndex = "32"
+            $(".thank-container")[0].style.marginLeft = "0"
+            $("#modal-logo")[0].style.marginTop = "17vmin"
+
+            let formDataSend = JSON.parse(localStorage.getItem("formData"))
+            if (!formDataSend) formDataSend = {
+                "defi": "NO",
+                "development": "NO",
+                "timeframes": "",
+                "check_usa": "NO",
+                "check-lat-am": "NO",
+                "check_can": "NO",
+                "check_afr": "NO",
+                "check_asia": "NO",
+                "check_eur": "NO",
+                "check_rus": "NO",
+                "check_aus": "NO",
+                "check_dark-net": "NO",
+                "check-ww": "NO",
+                "GotExp": "NO",
+                "NoExp": "NO",
+                "budget": "0",
+                "traffic": "NO",
+                "community": "NO",
+                "shilling": "NO",
+                "influencers": "NO",
+                "posting": "NO",
+                "pr": "NO",
+                "consulting": "NO",
+                "development_list": "NO",
+                "telegram": "",
+                "email": "",
+                "message": "",
+                "name": ""
+            }
+            formDataSend.telegram = label_tel.value != '' ? label_tel.value.trim() : '';
+            formDataSend.email = label_email.value != '' ? label_email.value.trim() : '';
+            formDataSend.name = label_name.value != '' ? label_name.value.trim() : '';
+            // formDataSend.phone = label_phone.value? label_phone.value : '" "';
+            formDataSend.message = label_text_area.value != '' ? label_text_area.value : '';
+            $.ajax({
+                type: 'get',
+                url: '/sendmail',
+                processData: false,
+                contentType: 'application/json',
+                data: JSON.stringify(formDataSend),
+                xhrFields: {
+                    withCredentials: false
+                },
+                headers: {},
+                success: function (data) {
+                    console.log(data);
+                    localStorage.removeItem("formData")
+                    // window.location.replace("/portfolio");           
+                },
+                error: function (xhr, status, error) {
+                    var err = eval("(" + xhr.responseText + ")");
+
+                    alert(err.Message);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"> -->
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <meta name="viewport" content="user-scalable=no">
+    
+    <link rel="stylesheet" href="css/style.css" />   
+    <link rel="stylesheet" href="css/checkboxCountry.css" />   
+    <link rel="stylesheet" href="css/checkbox_select.css" />   
+    <link rel="stylesheet" href="css/checkbox3.css" />   
+    <link rel="stylesheet" href="css/checkbox4.css" />   
+    <link rel="stylesheet" href="css/checkbox8_1.css" />   
+    <link rel="stylesheet" href="css/checkbox8_2.css" /> 
+
+    <link rel="stylesheet" href="css/checkbox10.css" />   
+    <link rel="stylesheet" href="css/checkbox10-1.css" />   
+    <link rel="stylesheet" href="css/checkbox10-2.css" />   
+    <link rel="stylesheet" href="css/checkbox10-3.css" />
+    <link rel="stylesheet" href="./libs/simple-adaptive-slider.min.css" />
+
+    <link rel="stylesheet" href="css/checkbox12.css" />  
+    <link rel="stylesheet" href="css/checkbox12-1.css" />  
+    <link rel="stylesheet" href="css/checkbox12-2.css" />  
+    <link rel="stylesheet" href="css/checkbox12-3.css" />  
+    <link rel="stylesheet" href="css/range.css" />  
+    <link rel="stylesheet" href="css/country.css" />  
+    <link rel="stylesheet" href="css/css_Artem.css" />  
+    <link rel="stylesheet" href="css/team.css" />  
+    <link rel="stylesheet" href="css/mySlider.css" />
+    <link rel="stylesheet" href="css/sliderLanding.css" />   
+    <link rel="stylesheet" href="css/modal.css" />  
+    <link rel="stylesheet" href="css/HowerEffectCss.css" />  
+    <link rel="stylesheet" href="css/mobile.css" />   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script defer src="./libs/simple-adaptive-slider.min.js"></script>
+    <style type="text/css">
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/WombyRUSbyDaymarius.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/WombyRUSbyDaymarius.ttf") /* TTF file for CSS3 browsers */
+        }        
+        @font-face {
+            font-family: Poppins;
+            src: url("./fonts/Poppins-Regular.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url("./fonts/Poppins-Regular.ttf") /* TTF file for CSS3 browsers */
+        }        
+        .MAINBOX{
+            overflow-x: hidden !important;
+        }
+    </style>
+</head>
+
+<body> 
+   
+    <div class="MAINBOX">
+       
+
+      
+    </div>
+   
+  
+   
+    <!-- <script  src="js/script.js"></script> -->
+    <script  src="js/script_mobile.js"></script>
+
+    <script  >
+
+        // let cursorInterval = setInterval( () =>  $('#budget-cursor')[0].style.display = $('#budget-cursor')[0].style.display == ""? 'none': '' ,450);
+        // function changeBudget(){            
+        //     if($('#budget-cursor')[0].value !== '') {
+        //         $('#budget-cursor')[0].style.display = "none"                
+        //         let moneyCount = makeMoney($('#budget_input')[0].value.toString().replace(' ',''));
+        //         if(moneyCount.length > 9 ) moneyCount = moneyCount.replace(' ','').substring(0, moneyCount.length - 1 )
+        //         if(moneyCount == 'NaN') moneyCount='';
+        //         $('#budget_input')[0].value = moneyCount;
+        //         $('#budget_input')[0].style.textAlign = "right";
+        //         clearInterval(cursorInterval)
+        //     } 
+        //     if($('#budget_input')[0].value == ''){
+        //         cursorInterval = setInterval( () =>  $('#budget-cursor')[0].style.display = $('#budget-cursor')[0].style.display == ""? 'none': '' ,450)
+        //         $('#budget_input')[0].style.textAlign = '';
+        //     }
+             
+        // }   
+        // function makeMoney(n) {
+        //     n = n.replace(' ',''); 
+        //     if(n > 1000000) n = 1000000;
+        // return parseFloat(n).toFixed(0).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g,'$1 ');
+        // }
+
+        document.addEventListener('DOMContentLoaded', function () {
+        // инициализация слайдера
+        var slider = new SimpleAdaptiveSlider('.slider', {
+          loop: true,
+          autoplay: false,
+          swipe: true
+        });
+      }); 
+      if(localStorage.getItem("modal")) {
+        contactSubmit()      
+        localStorage.removeItem("modal");
+      }
+      function contactSubmit(){
+           $("#modal")[0].style.display = "block";
+      }
+      function closeModal(){
+           $("#modal")[0].style.display = "none";
+      }
+
+    //   $("#main_form").submit(function () {
+
+       
+
+           
+
+    //         return false; //отправляете ваш submit
+    //     });
+
+   
+        $('.panel-item.check-country-item').on('click', function(e){
+          this.children[2].click();                          
+        });  
+        $(".member1_control").mouseenter(()=>{
+            $("#member1_wb")[0].style.opacity = "0"
+            $(".m3-info")[0].style.opacity = "0"
+            $(".m2-info")[0].style.opacity = "0"
+            $(".m1-info")[0].style.opacity = "1"
+           
+        })        
+        $(".member1_control").mouseleave(()=>{
+            $("#member1_wb")[0].style.opacity = "1"                           
+            $(".m1-info")[0].style.opacity = "0"
+        })
+        $(".member2_control").mouseenter(()=>{
+            $("#member2_wb")[0].style.opacity = "0"
+            $(".m3-info")[0].style.opacity = "0"
+            $(".m1-info")[0].style.opacity = "0"
+            $(".m2-info")[0].style.opacity = "1"
+        })        
+        $(".member2_control").mouseleave(()=>{
+            $("#member2_wb")[0].style.opacity = "1"           
+            $(".m2-info")[0].style.opacity = "0"
+        })
+        $(".member3_control").mouseenter(()=>{
+            $("#member3_wb")[0].style.opacity = "0"
+            $(".m1-info")[0].style.opacity = "0"
+            $(".m2-info")[0].style.opacity = "0"
+            $(".m3-info")[0].style.opacity = "1"
+        })        
+        $(".member3_control").mouseleave(()=>{
+            $("#member3_wb")[0].style.opacity = "1"
+            $(".m3-info")[0].style.opacity = "0"
+        })                 
+        
+            
+
+        // $(".member1_control").mouseenter(()=>{
+        //     // alert("попал в зону")
+        //     $(".m3-info")[0].style.opacity = "0"
+        //     $(".m2-info")[0].style.opacity = "0"
+        //     $(".m1-info")[0].style.opacity = "1"
+           
+        // })        
+        // $(".member1_control").mouseleave(()=>{
+        //      setTimeout(() => {
+        //         $(".m1-info")[0].style.opacity = "0"
+        //      }, 2000);
+        // })
+        // $(".member2_control").mouseenter(()=>{
+        //     $(".m3-info")[0].style.opacity = "0"
+        //     $(".m1-info")[0].style.opacity = "0"
+        //     $(".m2-info")[0].style.opacity = "1"
+        // })        
+        // $(".member2_control").mouseleave(()=>{
+        //     setTimeout(() => {
+        //         $(".m2-info")[0].style.opacity = "0"
+        //     }, 2000);
+        // })
+
+        // $(".member3_control").mouseenter(()=>{
+        //     $(".m1-info")[0].style.opacity = "0"
+        //     $(".m2-info")[0].style.opacity = "0"
+        //     $(".m3-info")[0].style.opacity = "1"
+        // })        
+        // $(".member3_control").mouseleave(()=>{
+        //     setTimeout(() => {
+        //         $(".m3-info")[0].style.opacity = "0"
+        //     }, 3000);
+        // })                 
+    </script>
+
+
+ 
+ 
+</body>
+
+</html>

@@ -1,0 +1,1645 @@
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, shrink-to-fit=no ">
+    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/checkbox3.css" />   
+    <link rel="stylesheet" href="css/checkbox4.css" /> 
+    <link rel="stylesheet" href="css/mobile.css" /> 
+    
+   
+    <style type="text/css"> 
+        .MAINBOX{
+            overflow-x: hidden !important;
+        }
+        .animatable, .animatable2 {  
+        /* initially hide animatable objects */
+        visibility: hidden;
+        /* initially pause animatable objects their animations */
+        -webkit-animation-play-state: paused;   
+        -moz-animation-play-state: paused;     
+        -ms-animation-play-state: paused;
+        -o-animation-play-state: paused;   
+        animation-play-state: paused;   
+        }
+        /* show objects being animated */
+        .animated{
+        visibility: visible;
+        
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+
+        -webkit-animation-play-state: running;
+        -moz-animation-play-state: running;
+        -ms-animation-play-state: running;
+        -o-animation-play-state: running;
+        animation-play-state: running;
+        }
+        @-webkit-keyframes bounceInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(200px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+            }
+        }
+        @-moz-keyframes bounceInDown {
+            0% {
+                opacity: 0;
+                -moz-transform: translateY(500px);
+            
+            }
+            100% {
+                opacity: 1;
+                -moz-transform: translateY(0);
+            }
+        }
+        @-o-keyframes bounceInDown {
+            0% {
+                opacity: 0;
+                -o-transform: translateY(500px);
+            }
+            100% {
+                opacity: 1;
+                -o-transform: translateY(0);
+            }
+        }
+        @keyframes bounceInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(500px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animated.animationDelay{
+            animation-delay:.2s;
+            -webkit-animation-delay:.2s;
+        }
+        .animated.animationDelayMed{
+            animation-delay:0.4s;
+            -webkit-animation-delay:0.4s;
+        }
+        .animated.animationDelayLong{
+            animation-delay:0.6s;
+            -webkit-animation-delay:0.6s;
+        }
+        .animated.bounceInDown {
+            -webkit-animation-name: bounceInDown;
+            -moz-animation-name: bounceInDown;
+            -o-animation-name: bounceInDown;
+            animation-name: bounceInDown;
+        }
+        
+        .wrap_loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 31;
+            font-size: 6vh;
+            width: 100vw;
+            height: 110vh;
+            text-align: center;
+            /* background: rgba(0, 0, 0, 0.6); */
+            background-color: #fed841;
+            backdrop-filter: blur(4px);
+            display: flex;
+            justify-content: center;
+            
+
+        }
+
+        .text_loading {
+            color: #fed841;
+            display: inline-block;
+            font-family:  "Arial Black", Impact, sans-serif;
+            font-weight: 900;
+            padding-left: 2vw;
+        }
+       
+        .loading{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container-loading{
+            position: relative;
+        }
+        .logo-container-loading{
+            position: relative;
+        }
+        .fire-loading{
+            width: 12vh;
+            margin-bottom: 3vh;
+        }
+        
+    </style>    
+</head>
+
+<body> 
+    <div id="landscape">
+        <div id="intro-container" class="intro-container">                       
+            <div class="intro-logo  animatable bounceInDown" >
+                <div class="logo-container">
+                    <img id="intro-logo" src="intro-logo.png" alt="intro-logo" srcset="./svg/logo.svg" loading="lazy">
+                </div>
+                <a href="/"><img id="fire1"  alt="fire" src="./img/fire2.gif" loading="lazy"></a> 
+                <div class="landscape-text"> *THE SITE WORKS IN PORTRAIT ORIENTATION</div>
+                 
+            </div>            
+        </div>       
+        <div class="all_right-container animatable bounceInDown">
+            <div   div class="all_right">© All rights reserved. Developed by WINDNFIRE</div> 
+        </div>
+    </div>
+    <div class="wrap_loader">
+        <div class="loading">
+            <div class="logo-container-loading">               
+                <img class="fire-loading"   alt="fire" src="./img/fire_white1.gif"  >            
+            </div>
+        </div>
+    </div>
+   
+    <div class="MAINBOX">
+        <form  id="main_form" >
+            <div class="container">
+                <div id="intro" class="row">
+                    <div id="menu" class="menu">
+                        <div class="close">
+                            <img id="close" src="close.png" alt="close" srcset="./svg/close.svg" loading="lazy"> 
+                        </div> 
+                        
+                        <div class="up_menu-container">
+                            <div class="accordeon-container">
+                                <div class="set first">
+                                    <a id="home" href="/">HOME</a>
+                                    <img id="downArrow2" src="downArrow.png" alt="downArrow2" srcset="./svg/arrowDown2.svg" loading="lazy">
+                                    <img id="downArrow" src="downArrow.png" alt="downArrow" srcset="./svg/arrowDown.svg" loading="lazy">
+                                    <div class="content">
+                                        <p><a href="/#tipe">TIPE</a></p>
+                                        <p><a href="/#time_frames">TIME FRAMES</a></p>                                        
+                                        <p ><a href="/#region">REGION</a></p>  
+                                        <p><a href="/#budget">BUDGET</a></p>
+                                        <p><a href="/#background">BACKGROUND</a></p>
+                                        <p><a href="/#services">SERVICES</a></p>
+                                        <p><a href="/#contact">CONTACT</a></p>      
+                                        <p><a href="/#articles">ARTICLES</a></p>      
+                                        <p><a href="/#portfolio">PORTFOLIO</a></p>      
+                                        <p><a href="/#serviceList">SERVICE LIST</a></p>      
+                                        <p><a href="/#chat">COMMUNITY</a></p>     
+                                        <p><a href="/#team">TEAM</a></p>      
+                                    </div>
+                                </div>                               
+                                <div class="set">
+                                    <a href="/portfolio">PORTFOLIO</a>    
+                                </div>
+                                <div class="set">
+                                    <a href="/services">SERVICES</a>    
+                                </div>
+                                <div class="set end">
+                                    <a href="/blog">BLOG</a>    
+                                </div>
+                            </div>                            
+                        </div>                        
+                    </div>
+
+                    <div id="intro-container" class="intro-container">                       
+                        <div class="intro-logo  animatable bounceInDown" >
+                            <div class="logo-container">
+                                <img id="intro-logo" src="intro-logo.png" alt="intro-logo" srcset="./svg/logo.svg" loading="lazy">
+                            </div>
+                            <a href="/"><img id="fire1"  alt="fire" src="./img/fire2.gif" loading="lazy"></a> 
+                        </div>
+                    </div>
+
+                    <!-- <div class="intro-logo animatable bounceInDown">
+                        <div class="logo-container">
+                            <img id="intro-logo" src="intro-logo.png" alt="intro-logo" srcset="./svg/logo.svg" loading="lazy"> 
+                            <img id="fire1"  alt="fire" src="./img/fire2.gif" loading="lazy">
+                        </div>                       
+                    </div> -->
+
+
+
+                    <div id="lang" class="lang">
+                        <div id="en" class="lang-item show"><span>EN</span></div>
+                        <div id="ru" class="lang-item"><span>RU</span></div>
+                        <div class="lang-item"><span>CZ</span></div>
+                    </div>
+                    <div class="gamburger">
+                        <img id="gamburger" src="gamburger.png" alt="gamburger" srcset="./svg/gamburger.svg" loading="lazy">                   
+                    </div>
+                    <div class="mail">
+                        <img id="mail" src="mail.png" alt="mail" srcset="./svg/mail.svg" onclick="contactSubmit()" loading="lazy">                   
+                    </div>
+                    <div class="upArrow">
+                        <img id="upArrow" onclick="topFunction()" src="upArrow.png" alt="upArrow" srcset="./svg/upArrow.svg" loading="lazy">                   
+                    </div>     
+                </div>              
+                <div  class="row flex flex11"> <a name="tipe"></a>
+                    <div class="yellow cont1-y">                    
+                        <div class="cont1-b animatable bounceInDown">
+                            <div class="cont1-bText animatable bounceInDown"> WINDNFIRE — MARKETING AGENCY THAT WORKS WITH HARD TO MONETIZE PROJECTS</div>
+                            <!-- <img id="cont1-ba"  alt="line" srcset="./svg/monetize_line.svg" loading="lazy">                    -->
+                            <img id="cont1-ba"  alt="line" srcset="./svg_mobile/hard_monetize.svg" loading="lazy">                   
+                        </div>
+                        <div class="cont1-1 animatable bounceInDown"> *SITE IS AN INTERACTIVE APPLICATION FORM</div>
+                        <div class="cont1-bubble">
+                            <ul class="bg-bubbles">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>                               
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="pic cont2">
+                        <div class="pic cont2">
+                            <video width="100%"  autoplay loop muted playsinline style="width: 50vw;">
+                                <source src="./img/Jack_mob.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            </video>
+                        </div>           
+                    </div>                
+                </div>             
+                <div  class="row flex flex11 pick-me"> <a name="time_frames"></a> 
+                               
+                    <div class="black cont3"> 
+                               
+                        <div class="line" >                 
+                            <div class="cont3-1 animatable bounceInDown" > DEFI</div>
+                            <div class="cont3-2 animatable bounceInDown" > ICO,</div>
+                            <div class="cont3-3 animatable bounceInDown" > OTHER CRYPTO</div> 
+                             <div class="cont3-4 animatable bounceInDown" > ETC.</div>
+                               
+                            <div class="cont3-round-title animatable bounceInDown">
+                                <img id="cont3-round-title" src="cont3-round-title.png" alt="PICK ME" srcset="./svg/cont3-round-title.svg" loading="lazy">                   
+                            </div>
+                            <div class="cont3-5 animatable bounceInDown"> PICKED 3626</div>   
+                        </div>
+                    </div> 
+                    <div class="white cont4">
+                        <div class="line" >
+                            <div class="cont4-1 animatable bounceInDown" > DEVELOPMENT</div>
+                            <div class="cont4-2 animatable bounceInDown" > START-UP</div>
+                            <div class="cont4-3 animatable bounceInDown" > CONSULTING</div> 
+                            <div class="cont4-4 animatable bounceInDown" > PICKED 2891</div>
+                            <div class="cont4-round-title animatable bounceInDown">
+                                <img id="cont4-round-title" src="cont4-round-title.png" alt="PICK ME" srcset="./svg/cont4-round-title.svg" loading="lazy">                   
+                            </div>
+                            <label class="checkbox4" >
+                                <span class="checkbox__input4" >
+                                    <input type="checkbox" name="development"  />
+                                    <span id="checkbox__control4" class="checkbox__control4 animatable bounceInDown"  >
+                                        <svg  xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                            <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)"/>
+                                        </svg>                           
+                                    </span>
+                                    <svg id="svg4" class=".svg4" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                        <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#000" stroke-width="5" stroke-dasharray="13 13"/>
+                                    </svg>                             
+                                </span>
+                            </label>
+                            
+                            
+                        </div>                        
+                    </div>                    
+                    <label class="checkbox3" >
+                        <span class="checkbox__input3" >
+                            <input type="checkbox" name="defi" />
+                            <span id="checkbox__control3" class="checkbox__control3 animatable bounceInDown" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                    <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                </svg>                          
+                            </span>
+                            <svg id="svg3" class=".svg3" xmlns="http://www.w3.org/2000/svg" width="231.816" height="170.071" viewBox="0 0 231.816 170.071">
+                                <path id="Контур_545" data-name="Контур 545" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2632.614 -1737.701)" fill="none" stroke="#e7335d" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" stroke-dasharray="13"/>
+                            </svg> 
+                        </span>
+                    </label>
+                </div>             
+                <div  class="row flex flex11 times"><a name="region"></a>
+                    <div class="yellow time">
+                        <div class="cont5-1 animatable bounceInDown" >TIME FRAMES</div>
+                        <div class="time-frame-container animatable bounceInDown">
+                            <div class="cont5-2">PICK </div> 
+                            <div class="cont5-3">YOUR </div> 
+                            <div class="cont5-4">TIME FRAME</div> 
+                        </div>                       
+                        <div class="cont5-5 animatable bounceInDown">A WEEK</div>
+                        <div id="container-time" class=" animatable bounceInDown">
+                            <input id="range-time" name="timeframes" type="range" min="1" max="1000" value="1"  class="range">
+                        </div>
+                        <div class="cont5-6 animatable bounceInDown">SRSLY?</div>
+                    </div>                            
+                </div> 
+                <div  class="row flex flex11 maps  animatable bounceInDown"> <a name="budget"></a>                
+                    <div class="black mobile-country">
+                        <div class="cont6">PICK YOUR REGIONS</div>
+                        <div class="country-img">                                           
+                            <img id="maps" alt="peace" srcset="./svg/maps-mobile/map0.svg" loading="lazy"> 
+                            <img id="usa-hover"  alt="usa-hover" srcset="./svg/maps-mobile/usa.svg" loading="lazy">                    
+                            <img id="usa-check"  alt="usa-check" srcset="./svg/maps-mobile/usa-1.svg" loading="lazy">                   
+                            <img id="can-hover"  alt="can-hover" srcset="./svg/maps-mobile/canada.svg" loading="lazy">                    
+                            <img id="can-check"  alt="can-check" srcset="./svg/maps-mobile/canada-1.svg" loading="lazy">                   
+                            <img id="afr-hover"  alt="afr-hover" srcset="./svg/maps-mobile/africa.svg" loading="lazy">                    
+                            <img id="afr-check"  alt="afr-check" srcset="./svg/maps-mobile/africa-1.svg" loading="lazy">                 
+                            <img id="asia-hover"  alt="asia-hover" srcset="./svg/maps-mobile/asia.svg" loading="lazy">                    
+                            <img id="asia-check"  alt="asia-check" srcset="./svg/maps-mobile/asia-1.svg" loading="lazy">                 
+                            <img id="aus-hover"  alt="aus-hover" srcset="./svg/maps-mobile/australlia.svg" loading="lazy">                    
+                            <img id="aus-check"  alt="aus-check" srcset="./svg/maps-mobile/australlia-1.svg" loading="lazy">                 
+                            <img id="eur-hover"  alt="eur-hover" srcset="./svg/maps-mobile/europe.svg" loading="lazy">                    
+                            <img id="eur-check"  alt="eur-check" srcset="./svg/maps-mobile/europe-1.svg" loading="lazy">                 
+                            <img id="lat-am-hover"  alt="lat-am-hover" srcset="./svg/maps-mobile/lat-america.svg" loading="lazy">                    
+                            <img id="lat-am-check"  alt="lat-am-check" srcset="./svg/maps-mobile/lat-america-1.svg" loading="lazy"> 
+                            <img id="rus-hover"  alt="rus-hover" srcset="./svg/maps-mobile/russia.svg" loading="lazy">                    
+                            <img id="rus-check"  alt="rus-check" srcset="./svg/maps-mobile/russia-1.svg" loading="lazy">                 
+                            <img id="dark-net-hover"  alt="dark-net-hover" srcset="./svg/maps-mobile/dark-net.png" loading="lazy">                  
+                            <img id="dark-net-check"  alt="dark-net-check" srcset="./svg/maps-mobile/dark-net1.png" loading="lazy">                  
+                            <img id="ww-hover"  alt="ww-hover" srcset="./svg/maps-mobile/ww.svg" loading="lazy">                    
+                            <img id="ww-check"  alt="ww-check" srcset="./svg/maps-mobile/ww-1.svg" loading="lazy">                             
+                        </div>
+                        <div class="country-checkbox-mobile">
+                            <div class="panel-country">
+                                <div class="panel-item c1 check-country-item" > 
+                                    <div class="white-checkbox " >
+                                        <img id="hover-usa" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-usa" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy"> 
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy"> 
+                                    </div>
+                                    <div class="title-country">USA</div>
+                                    <input type="checkbox" name="check_usa">                                
+                                </div>
+                                <div class="panel-item c2 check-country-item">
+                                    <div class="white-checkbox " >
+                                        <img id="hover-afr" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-afr" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy"> 
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy"> 
+                                    </div>
+                                    <div class="title-country">AFRICA</div>
+                                    <input type="checkbox" name="check_afr">
+                                </div>
+                                <div class="panel-item c3 check-country-item">
+                                    <div class="white-checkbox " >
+                                        <img id="hover-rus" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-rus" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy"> 
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy"> 
+                                    </div>
+                                    <div class="title-country">RUSSIA</div>
+                                    <input type="checkbox" name="check_rus">
+                                </div> 
+                                <div class="panel-item c1 check-country-item">
+                                    <div class="white-checkbox " >
+                                        <img id="hover-lat-am" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-lat-am" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy"> 
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy"> 
+                                    </div>
+                                    <div class="title-country">LAT.AMERICA</div>
+                                    <input type="checkbox" name="check-lat-am">
+                                </div>
+                                <div class="panel-item c2 check-country-item">
+                                    <div class="white-checkbox " >
+                                        <img id="hover-asia" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-asia" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy"> 
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy"> 
+                                    </div>
+                                    <div class="title-country">ASIA</div>
+                                    <input type="checkbox" name="check_asia">                                
+                                </div>
+                                <div class="panel-item c3 check-country-item">
+                                    <div class="white-checkbox " >
+                                        <img id="hover-aus" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-aus" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy"> 
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy"> 
+                                    </div>
+                                    <div class="title-country">AUSTRALIA</div>
+                                    <input type="checkbox" name="check_aus">
+                                </div>
+                                <div class="panel-item c1 check-country-item">
+                                    <div class="white-checkbox " >
+                                        <img id="hover-can" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-can" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy">
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy">  
+                                    </div>
+                                    <div class="title-country">CANADA</div>
+                                    <input type="checkbox" name="check_can">
+                                </div>
+                                <div class="panel-item c2 check-country-item">
+                                    <div class="white-checkbox " >
+                                        <img id="hover-eur" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-eur" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy"> 
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy"> 
+                                    </div>
+                                    <div class="title-country">EUROPE</div>
+                                    <input type="checkbox" name="check_eur">
+                                </div>
+                                <div class="panel-item c3 check-country-item">
+                                    <div class="white-checkbox " >
+                                        <img id="hover-dark-net" class="hover-icon"  alt="hover-icon" srcset="./svg/maps-mobile/hover.svg" loading="lazy">                    
+                                        <img id="check-dark-net" class="check-icon"  alt="check-icon" srcset="./svg/maps-mobile/check.svg" loading="lazy"> 
+                                        <img id="white-checkbox-img"  alt="ww-check" src="./img/white-chekbox-img.png" loading="lazy">  
+                                    </div>
+                                    <div class="title-country">DARK NET</div>
+                                    <input type="checkbox" name="check-dark-net">
+                                </div>                            
+                                <div class="peace check-country-item">
+                                    <input id="check-ww-mobile" type="checkbox" name="check-ww">
+                                </div>
+                            </div>
+                            <div class="ww-check">
+                                <img id="ww-mobile"  alt="ww-non-check" srcset="./svg/maps-mobile/ww-NON-check.svg" loading="lazy">                        
+                            </div>
+                        </div>                   
+                    </div>                
+                </div>
+                <div  class="row flex flex11"> <a name="background"></a>
+                    <div class="pic">
+                        <div class="pic cont7">
+                            <div class="pic cont2">
+                                <video width="100%"  autoplay loop muted playsinline>
+                                    <source src="./img/newGif.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                </video>
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="white time ">
+                        <div class="cont9-1 animatable bounceInDown">BUDGET</div>                        
+                        <div class="cont9-2 animatable bounceInDown">*MINIMAL BUDGET AMOUNT IS $1000</div>
+                        <input class=" animatable bounceInDown" type="text" id="budget_input" name="budget_input" oninput="changeBudgetInput(this)"  minlength="0"  maxlength="9" size="10" value="$"> 
+                        <div id="container-time2" class=" animatable bounceInDown">
+                            <input id="range-time2" name="time-select" type="range" min="1000" step="1000" max="400000" value="1000"  class="range unselectable" oninput="changeBudgetRange(value)">
+                        </div>
+                       
+                    </div>      
+                </div> 
+
+                <div  class="row flex flex11"> <a name="services"></a>               
+                    <div class="pink double mobile">
+                        <div class="cont8  animatable bounceInDown" >ANY EXP<span style="color: #fed841;">?</span></div>
+                        <div class="cont8-1  animatable bounceInDown" >YES</div>
+                        <div class="cont8-2  animatable bounceInDown" >NOT</div>
+                        <!-- <div class="cont8-3" >DID YOUR PROJECT HAVE A PROMOTION BACKGROUND?</div> -->
+                        <div class="cont8-round-title  animatable bounceInDown" >
+                            <img id="cont8-round-title1" src="cont8-round-title.png" alt="PICK ME" srcset="./svg/cont8-round-title.svg" loading="lazy">                   
+                        </div>
+                        <div class="cont8-round-title  animatable bounceInDown" >
+                            <img id="cont8-round-title2" src="cont8-round-title.png" alt="PICK ME" srcset="./svg/cont8-round-title.svg" loading="lazy">                   
+                        </div>
+                        <label class="checkbox8_1  animatable bounceInDown" >
+                            <span class="checkbox__input8_1">
+                                <input id = "check8_1" type="checkbox" name="GotExp" />
+                                <span id="checkbox__control8_1" class="checkbox__control8_1">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                        <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)"/>
+                                    </svg>                           
+                                </span>
+                                <svg id="svg8_1" class="svg8_1" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                    <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#000" stroke-width="5" stroke-dasharray="13 13"/>
+                                </svg>                             
+                            </span>
+                        </label>
+                        <label class="checkbox8_2  animatable bounceInDown" >
+                            <span class="checkbox__input8_2">
+                                <input id = "check8_2" type="checkbox" name="NoExp" />
+                                <span id="checkbox__control8_2" class="checkbox__control8_2">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                        <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)"/>
+                                    </svg>                           
+                                </span>
+                                <svg id="svg8_2" class="svg8_2" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                    <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#000" stroke-width="5" stroke-dasharray="13 13"/>
+                                </svg>                             
+                            </span>
+                        </label>
+                    </div>                                
+                </div> 
+                <div  class="row flex flex11"> <a name="contact"></a>
+                    <div class="black posting">
+                        
+                        <div class="checkbox12-container  " >
+                            <div class="cont12-4 animatable bounceInDown">MAKE YOUR CHOICE</div>
+                            <div class="cont12 animatable bounceInDown" >POSTING</div>                  
+                            <div class="cont12-1 animatable bounceInDown" >PR</div>  
+                            <div class="cont12-2 animatable bounceInDown" >CONSULTING</div>                  
+                            <div class="cont12-3 animatable bounceInDown" >DEVELOPMENT</div> 
+                            <label class="checkbox12">
+                            <span class="checkbox__input12">
+                                <input id = "check12" type="checkbox" name="posting" />
+                                <span id="checkbox__control12" class="checkbox__control12 animatable bounceInDown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                        <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                    </svg>                           
+                                </span>
+                                <svg id="svg12" class="svg12 animatable bounceInDown" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                    <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#e7335d" stroke-width="5" stroke-dasharray="13 13"/>
+                                </svg>                             
+                            </span>
+                            </label>
+                            <label class="checkbox12-1">
+                                <span class="checkbox__input12-1">
+                                    <input id = "check12-1" type="checkbox" name="pr" />
+                                    <span id="checkbox__control12-1" class="checkbox__control12-1 animatable bounceInDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                            <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                        </svg>                           
+                                    </span>
+                                    <svg id="svg12-1" class="svg12-1 animatable bounceInDown" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                        <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#e7335d" stroke-width="5" stroke-dasharray="13 13"/>
+                                    </svg>                             
+                                </span>
+                            </label>                    
+                            <label class="checkbox12-2">
+                                <span class="checkbox__input12-2">
+                                    <input id = "check12-2" type="checkbox" name="consulting" />
+                                    <span id="checkbox__control12-2" class="checkbox__control12-2 animatable bounceInDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                            <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                        </svg>                           
+                                    </span>
+                                    <svg id="svg12-2" class="svg12-2 animatable bounceInDown" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                        <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#e7335d" stroke-width="5" stroke-dasharray="13 13"/>
+                                    </svg>                             
+                                </span>
+                            </label>
+                            <label class="checkbox12-3">
+                                <span class="checkbox__input12-3">
+                                    <input id = "check12-3" type="checkbox" name="development_list" />
+                                    <span id="checkbox__control12-3" class="checkbox__control12-3 animatable bounceInDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                            <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                        </svg>                           
+                                    </span>
+                                    <svg id="svg12-3" class="svg12-3 animatable bounceInDown" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                        <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#e7335d" stroke-width="5" stroke-dasharray="13 13"/>
+                                    </svg>                             
+                                </span>
+                            </label> 
+                        </div>
+                       
+
+                    </div>   
+                    <div class="white traffic">
+                        
+                        <div class=" "  >
+                            <div class="cont10-4 animatable bounceInDown" >MAKE YOUR CHOICE</div> 
+                            <div class="cont10 animatable bounceInDown" >TRAFFIC</div>
+                            <div class="cont10-1 animatable bounceInDown" >COMMUNITY</div>  
+                            <div class="cont10-2 animatable bounceInDown " >SHILLING</div>                  
+                            <div class="cont10-3 animatable bounceInDown " >INFLUENCERS</div>
+                            <label class="checkbox10">
+                                <span class="checkbox__input10">
+                                    <input id = "check10" type="checkbox" name="traffic" />
+                                    <span id="checkbox__control10" class="checkbox__control10 animatable bounceInDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                            <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                        </svg>                           
+                                    </span>
+                                    <svg id="svg10" class="svg10" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                        <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#e7335d" stroke-width="5" stroke-dasharray="13 13"/>
+                                    </svg>                             
+                                </span>
+                            </label>
+                            <label class="checkbox10-1">
+                                <span class="checkbox__input10-1">
+                                    <input id = "check10-1" type="checkbox" name="community" />
+                                    <span id="checkbox__control10-1" class="checkbox__control10-1 animatable bounceInDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                            <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                        </svg>                           
+                                    </span>
+                                    <svg id="svg10-1" class="svg10-1" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                        <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#e7335d" stroke-width="5" stroke-dasharray="13 13"/>
+                                    </svg>                             
+                                </span>
+                            </label>                    
+                            <label class="checkbox10-2">
+                                <span class="checkbox__input10-2">
+                                    <input id = "check10-2" type="checkbox" name="shilling" />
+                                    <span id="checkbox__control10-2" class="checkbox__control10-2 animatable bounceInDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                            <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                        </svg>                           
+                                    </span>
+                                    <svg id="svg10-2" class="svg10-2" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                        <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#e7335d" stroke-width="5" stroke-dasharray="13 13"/>
+                                    </svg>                             
+                                </span>
+                            </label>
+                            <label class="checkbox10-3">
+                                <span class="checkbox__input10-3">
+                                    <input id = "check10-3" type="checkbox" name="influencers" />
+                                    <span id="checkbox__control10-3" class="checkbox__control10-3 animatable bounceInDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="226.816" height="165.071" viewBox="0 0 226.816 165.071">
+                                            <path id="Контур_34" data-name="Контур 34" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2635.114 -1740.201)" fill="#e7335d"/>
+                                        </svg>                           
+                                    </span>
+                                    <svg id="svg10-3" class="svg10-3" xmlns="http://www.w3.org/2000/svg" width="236.283" height="171.013" viewBox="0 0 236.283 171.013">
+                                        <path id="Контур_546" data-name="Контур 546" d="M2635.114,1810.766l71.195,94.507L2861.93,1740.2l-151.841,102.7Z" transform="translate(-2627.466 -1738.13)" fill="none" stroke="#e7335d" stroke-width="5" stroke-dasharray="13 13"/>
+                                    </svg>                             
+                                </span>
+                            </label>
+                        </div>
+                       
+                    </div>
+                                
+                </div>  
+
+                <div  class="row flex flex11">
+                    <div class="yellow double provide">
+                        <div class="cont1-b">                            
+                            <ul class="bg-bubbles">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>                               
+                            </ul>                             
+                            <div class="cont11  animatable bounceInDown" >PROVIDE A WAY</div>                  
+                            <div class="cont11-1  animatable bounceInDown" >OF CONTACT</div>   
+                            <button id="submit11" class="animatable bounceInDown"  class="cont14-but" type="button" onclick="contactSubmit()" >SUBMIT</button>
+                            
+                        </div> 
+                    </div>
+                </div>
+
+
+                <div  class="row flex flex11 " > <a name="articles"></a>
+                    <div class="black triple musk">
+                        <div class="pic cont13 " >
+                            <img id="auto" src="./img/auto-Musk.jpeg" alt=""  loading="lazy">
+                            <div class="cont13-1 animatable bounceInDown" >MARKETING RESEARCH</div> 
+                            <div class="cont13-2 animatable bounceInDown" >AND DEVELOPMENT OF</div> 
+                            <div class="cont13-3 animatable bounceInDown" >A STRATEGY AND</div> 
+                            <div class="cont13-4 animatable bounceInDown" >BRAND PLATFORM FOR</div> 
+                            <div class="cont13-5 animatable bounceInDown" >THE NEW AND EXISTED</div> 
+                            <div class="cont13-6 animatable bounceInDown" >MARKETS.</div> 
+                            <div class="cont13-7 animatable bounceInDown" >CHECK IT OUT.</div> 
+                        </div> 
+                    </div>
+                                
+                </div>  
+                <div  class="row flex flex11"> <a name="portfolio"></a>
+                    <div class="pink articles">
+                        
+                        <div class="cont18-1 animatable bounceInDown" >ARTICLES</div> 
+                        <ul>
+                            <li class="cont18-2 animatable bounceInDown" >
+                                <a href="/blog/1#post0">
+                                    WINDNFIRE — MARKETING AGENCY THAT WORKS WITH <span>HARD TO MONETIZE</span> PROJECTS  </a>
+                            </li>
+                            <li class="cont18-2 animatable bounceInDown" >
+                                <a href="/blog/1#post1">
+                                    BLOCKCHAINUA WINDNFIRE WILL BE AN ORGANIZATIONAL PARTNER OF BLOCKCHAINUA  </a>
+                            </li>
+                            <!-- <li class="cont18-2 animatable bounceInDown" >
+                                <a href="#">
+                                    </a>
+                            </li> -->
+                        </ul>
+                    </div>  
+                </div>  
+                <div  class="row flex flex11 utopia"> 
+                    <div class="white check-utopia  animatable bounceInDown">
+                        <div id="slider_selection" >
+                            <label class="slider_selection_item"   onclick="panelNavigation(0)">                               
+                                <span class="checkbox__control"></span> 
+                                <div class="radio__label">GLQ</div>
+                            </label> 
+                            <label class="slider_selection_item"  onclick="panelNavigation(1)">
+                                <span class="checkbox__control"></span> 
+                                <div class="radio__label">TELESCR</div>
+                            </label> 
+                            <label class="slider_selection_item"  onclick="panelNavigation(2)">                               
+                                <span class="checkbox__control"></span>                                
+                                <div class="radio__label">UTOPIA</div>
+                            </label> 
+                            <label class="slider_selection_item"  onclick="panelNavigation(3)">                               
+                                <span class="checkbox__control"></span>                                
+                                <div class="radio__label">GLQ1</div>
+                            </label> 
+                            <label class="slider_selection_item"  onclick="panelNavigation(4)">                               
+                                <span class="checkbox__control"></span> 
+                                <div class="radio__label">TELESCR2</div>
+                            </label> 
+                            <label class="slider_selection_item"  onclick="panelNavigation(5)">
+                                <span class="checkbox__control"></span> 
+                                <div class="radio__label">UTOPIA2</div>
+                            </label>
+                            <label class="slider_selection_item"  onclick="panelNavigation(6)">                               
+                                <span class="checkbox__control"></span>                                
+                                <div class="radio__label">GLQ2</div>
+                            </label>  
+                            <label class="slider_selection_item"  onclick="panelNavigation(7)">
+                                <span class="checkbox__control"></span> 
+                                <div class="radio__label">TELESCR3</div>
+                            </label> 
+                            <label class="slider_selection_item"  onclick="panelNavigation(8)">                               
+                                <span class="checkbox__control"></span> 
+                                <div class="radio__label">UTOPIA3</div>
+                            </label> 
+                                                    
+                        </div>
+                    </div>
+                    <div class="white  animatable bounceInDown">
+                        <div class="cont14 animatable bounceInDown" >PORTFOLIO</div>                  
+                        <div id="prev"  class="cont14-1 animatable bounceInDown"  onclick="panelNavigation(null,'prev')" >&lt;</div> 
+                        <div id="next"  class="cont14-2 animatable bounceInDown"  onclick="panelNavigation(null,'next')" >&gt;</div> 
+                        <button id="submit14" class="cont14-but animatable bounceInDown" type="button" ><a href="/portfolio">SHOW ALL</a></button> 
+                        <a name="serviceList"></a>                   
+                    </div>   
+            
+                            
+                </div>            
+                <div  class="row flex flex11 mobile" >   
+                        
+                    <div class="black mobile">
+                        <div class="slider my">
+                            <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item">
+                                    <div id="slide1-1" class="slide"  alt="" srcset="./svg/portfolio/graphLinq_1.svg"></div>
+                                    <div id="slide1-2" class="slide"  alt="" srcset="./svg/portfolio/graphLinq_2.svg"></div>
+                                </div>      
+                                <div class="slider__item">
+                                    <div id="slide2-1" class="slide"  alt="" srcset="./svg/portfolio/telescr_in_1.svg"></div>
+                                    <div id="slide2-2" class="slide"  alt="" srcset="./svg/portfolio/telescr_in_2.svg"></div>                  
+                                </div>      
+                                <div class="slider__item">
+                                    <div id="slide3-1" class="slide"  alt="" srcset="./svg/portfolio/utopia_1.svg"></div>
+                                    <div id="slide3-2" class="slide"  alt="" srcset="./svg/portfolio/utopia_2.svg"></div>                  
+                                </div>                                                          
+                                <div class="slider__item">
+                                    <div id="slide4-1" class="slide"  alt="" srcset="./svg/portfolio/graphLinq_1.svg"></div>
+                                    <div id="slide4-2" class="slide"  alt="" srcset="./svg/portfolio/graphLinq_2.svg"></div>
+                                </div>      
+                                <div class="slider__item">
+                                    <div id="slide5-1" class="slide"  alt="" srcset="./svg/portfolio/telescr_in_1.svg"></div>
+                                    <div id="slide5-2" class="slide"  alt="" srcset="./svg/portfolio/telescr_in_2.svg"></div>                  
+                                </div>      
+                                <div class="slider__item">
+                                    <div id="slide6-1" class="slide"  alt="" srcset="./svg/portfolio/utopia_1.svg"></div>
+                                    <div id="slide6-2" class="slide"  alt="" srcset="./svg/portfolio/utopia_2.svg"></div>                  
+                                </div>                                                          
+                                <div class="slider__item">
+                                    <div id="slide7-1" class="slide"  alt="" srcset="./svg/portfolio/graphLinq_1.svg"></div>
+                                    <div id="slide7-2" class="slide"  alt="" srcset="./svg/portfolio/graphLinq_2.svg"></div>
+                                </div>      
+                                <div class="slider__item">
+                                    <div id="slide8-1" class="slide"  alt="" srcset="./svg/portfolio/telescr_in_1.svg"></div>
+                                    <div id="slide8-2" class="slide"  alt="" srcset="./svg/portfolio/telescr_in_2.svg"></div>                  
+                                </div>      
+                                <div class="slider__item">
+                                    <div id="slide9-1" class="slide"  alt="" srcset="./svg/portfolio/utopia_1.svg"></div>
+                                    <div id="slide9-2" class="slide"  alt="" srcset="./svg/portfolio/utopia_2.svg"></div>                  
+                                </div>                                                          
+                            </div>
+                            </div>
+                
+                            <a id="prev-target" class="slider__control slider__control_prev" href="#auto" role="button" data-slide="prev"></a>
+                            <a id="next-target"  class="slider__control slider__control_next" href="#auto" role="button" data-slide="next"></a>
+                        </div>
+                    </div>             
+                    
+                </div>
+
+                <div  class="row flex flex11 mobile">
+                    <div class="black our">                       
+                        <div class="cont19 animatable bounceInDown" >OUR</div> 
+                        <div class="cont19-1 animatable bounceInDown" >SERVICES</div> 
+                        <button id="submit19" class="cont19-but animatable bounceInDown" type="button" ><a href="/services">FULL LIST</a></button>
+                    </div>
+                    <div class="white card">
+                        <div class="front_card animatable bounceInDown" >
+                            <div class="cont21-1">DIRECT MAIL</div>                     
+                        <img id="directmail1"alt="mail" srcset="./svg/cards/directmail1.svg" loading="lazy"> 
+                        <div class="cont21-2">HELLO! MY NAME IS</div> 
+                        </div>  
+                        <div class="back_card">  
+                        <div class="cont21">
+                            USING AN E-MAIL NEWSLETTER ALLOWS YOU TO ESTABLISH COMMUNICATION WITH THE AUDIENCE, TELL THEM ABOUT A NEW PROJECT OR NEWS THAT IS HAPPENING IN THE PROJECT.
+                        </div>  
+                        <button class="cont21-but" value="7">MORE</button> 
+                       
+                        </div>
+                    </div>   
+                     
+                </div> 
+                <div  class="row flex flex11 mobile">  
+                    <div class="pink shilling card">
+                        <div class="front_card animatable bounceInDown" >
+                            <div class="cont20-1">SHILLING</div> 
+                            <div class="cont20-2">SHILLING/CROWDSHILLING/SEEDING</div> 
+                            <img id="sms" alt="sms" srcset="./svg/cards/sms.svg" loading="lazy">                             
+                            <div class="cont20-3">SOUND INTERESTING, GIMME</div> 
+                            <div class="cont20-4">THE LINK ON THIS PROJECT PLS</div>                      
+                            <div class="cont20-5">HERE - @WNF_AGENCY</div> 
+                            <div class="cont20-6">WOW! GREAT COMMUNITY, TNQ!</div>                            
+                        </div> 
+                        <div class="back_card">                            
+                            
+                            <div class="cont20">
+                                IT ALLOWS YOU TO CREATE A POSITIVE IMAGE OF THE PROJECT, NATIVE REVIEWS, AND ATTRACT THE ATTENTION OF USERS.
+                            </div>  
+                            <button class="cont20-but" value="3">MORE</button> 
+                        </div>
+                    </div> 
+                    <div class="black card">
+                        <div class="front_card animatable bounceInDown" >
+                            <div class="cont25-1">AIRDROP</div>            
+                            <img id="packman"alt="packman" srcset="./svg/cards/packman.svg" loading="lazy"> 
+                        </div>  
+                        <div class="back_card">   
+                            <div class="cont25">
+                                IT ALLOWS YOU TO EASILY GATHER A COMMUNITY AND ESTABLISH COMMUNICATION WITH THE TARGET AUDIENCE
+                            </div>  
+                            <button class="cont25-but" value="0">MORE</button>                                           
+                        </div>                  
+                    </div>                      
+                </div>            
+                  
+
+                <div  class="row flex flex11">
+                    <div class="white card">   
+                        <div class="front_card animatable bounceInDown" >
+                            <div class="cont18-AMA">AMA</div> 
+                            <img id="AMA"alt="" srcset="./svg/cards/AMA.svg" loading="lazy">
+                        </div>  
+                        <div class="back_card ">                            
+                            <div class="cont18">
+                                ATTRACTING A HOT AUDIENCE OF THE PROJECT FROM SOCIAL NETWORKS, SEARCH SERVICES, AND THE INTERNET.
+                            </div>  
+                            <button class="cont18-but" value="6">MORE</button>
+                        </div>
+                    </div>
+                    <div class="pink card">
+                        <div class="front_card animatable bounceInDown" >
+                            <div class="cont29-1">TARGETING</div>            
+                            <img id="mens"alt="mens" srcset="./svg/cards/mens.svg" loading="lazy">
+                        </div>  
+                        <div class="back_card">  
+                            <div class="cont29">
+                                CONTENT SEEDING ALLOWS YOU TO REACH THE LARGEST POSSIBLE AUDIENCE AND ATTRACT THE ATTENTION OF NEW USERS TO YOUR PROJECT.
+                            </div>  
+                            <button class="cont29-but" value="2">MORE</button>                                    
+                        </div>                    
+                    </div>    
+                                
+                </div>        
+                <div  class="row flex flex11">
+                    <div class="yellow card">
+                        <div class="front_card animatable bounceInDown" >                            
+                            <div class="cont28">CONSULTING</div>            
+                            <img id="consulting"alt="consulting" srcset="./svg/cards/consulting.svg" loading="lazy"> 
+                        </div>  
+                        <div class="back_card">    
+                            <div class="cont28">
+                                MAINTAINING COMMUNITIES IN SOCIAL NETWORKS, BLOGS, AND FORUM BRANCHES IS THE COMPANY'S REPRESENTATION ON THE MOST POPULAR ONLINE SERVICES.
+                            </div>  
+                            <button class="cont28-but" value="5">MORE</button>                                     
+                        </div>
+                    </div> 
+                    <div class="black card">
+                        <div class="front_card animatable bounceInDown" >                            
+                            <div class="cont30-1">MASS MEDIA</div>            
+                            <img id="comics"alt="comics" srcset="./svg/cards/comics.svg" loading="lazy">  
+                        </div>  
+                        <div class="back_card">  
+                            <div class="cont30">
+                                IT ALLOWS YOU TO ATTRACT THE ATTENTION OF JOURNALISTS, EDITORS, AND READERS TO THE PROJECT.
+                            </div>  
+                            <button class="cont30-but" value="8">MORE</button>                          
+                        </div>          
+                    </div> 
+                </div>
+                
+
+                <div  class="row flex flex11">
+                    <div class="black card">
+                        <div class="front_card animatable bounceInDown" >
+                            <div class="cont26">BOUNTY</div> 
+                        <img id="bounty" alt="bounty" srcset="./svg/cards/bounty.svg" loading="lazy"> 
+                        </div>  
+                        <div class="back_card">   
+                            <div class="cont26-11">
+                            IT IS A MARKETING TOOL THAT ALLOWS YOU TO INCREASE ACTIVITY IN SOCIAL NETWORKS AND SAVE ON SOLVING THE TASKS NECESSARY FOR THE PROJECT BY PAYING FOR THEM WITH TOKENS.
+                            </div>  
+                        <button class="cont26-but" value="9">MORE</button>                               
+                        </div>
+                    </div>  
+                    <div class="yellow card">
+                        <div class="front_card animatable bounceInDown" >
+                            <div class="cont26-1">INFLUENCERS</div>            
+                        <img id="TV"alt="TV" srcset="./svg/cards/TV.svg" loading="lazy">
+                        </div>  
+                        <div class="back_card ">    
+                            <div class="influensers">
+                                KOL – (KEY OPINION LEADER) IS WORKING WITH OPINION LEADERS IN SOCIAL NETWORKS.
+                            </div>  
+                            <button class="influensers" value="4">MORE</button>       <a name="chat"></a>                     
+                        </div>
+                    </div> 
+                </div>   
+                <div  class="row flex flex11 chat animatable bounceInDown"  > 
+                    <div  class="black chat"> 
+                        <button onclick ="window.open(`https://t.me/wnf_agency`)">FOLLOW</button> <a id="teamAnhor"  name="team"></a> 
+                        <div class="bl-scroll">
+                            <img id="chat-list" srcset="../../svg/chatList.svg"  loading="lazy">
+                        </div>                      
+                        <div class="follow-container">
+                            <img id="follow" srcset="../../svg/chat_mobile.svg"  loading="lazy">                            
+                        </div>
+                    </div>
+                </div>
+
+                <div  class="row flex flex11 animatable bounceInDown" ><a name="team"></a>
+                    <div class="team-mobile">
+                        <div class="pic double mobile ">
+                            <img id="teamBack" alt="team" src="./svg/team4/f1.jpg" loading="lazy">
+                            <div>
+                                <img id="member1_color" class="mem-img" alt="member1" src="./svg/team4/D2.png" loading="lazy">                           
+                                <img id="member1_wb" class="mem-img" alt="member1" src="./svg/team4/D1.png" loading="lazy">                           
+                                 <div class="member1_control"></div>
+                            </div>                     
+                            <div>
+                                <img id="member2_color" class="mem-img" alt="member2" src="./svg/team4/D4.png" loading="lazy">
+                                <img id="member2_wb" class="mem-img" alt="member2" src="./svg/team4/D3.png" loading="lazy">
+                                <div class="member2_control"></div>
+                            </div>                     
+                            <div>
+                                <img id="member3_color" class="mem-img" alt="member3" src="./svg/team4/D6.png" loading="lazy">
+                                <img id="member3_wb" class="mem-img" alt="member3" src="./svg/team4/D5.png" loading="lazy">
+                                <div class="member3_control"></div>
+                            </div> 
+                            <div class="m1-info"> 
+                                <div class="info-container">
+                                    <img id="m1_inf" alt="m1_info" src="./svg/team4/m1_i.png" loading="lazy">
+                                    <!-- <img id="m1_inf" alt="m1_info" src="./svg/team3/m1_i.png" loading="lazy"> -->
+                                </div>
+                                <input id="m1-tg" type="image" src="./svg/team2/telegram.svg"  ontouchstart ="window.open('https://t.me/SLS_man')" />
+                                <input id="m1-inst" type="image" src="./svg/team2/instagram.svg"  ontouchstart ="window.open('https://www.instagram.com/kiber_pauk')" />
+                                <input id="m1-link" type="image" src="./svg/team2/linkedin.svg"  ontouchstart ="window.open('https://www.linkedin.com/in/daniel-ocean-131874150/')" />
+                            </div>                        
+                            <div class="m2-info"> 
+                                <div class="info-container">
+                                    <img id="m2_inf" alt="m2_info" src="./svg/team4/m2_i.png" loading="lazy">
+                                    <!-- <img id="m2_inf" alt="m2_info" src="./svg/team3/m2_i.pngg" loading="lazy"> -->
+                                </div>
+                                <input id="m2-tg" type="image" src="./svg/team2/telegram.svg"  ontouchstart ="window.open('https://t.me/desfra')" />
+                                <input id="m2-inst" type="image" src="./svg/team2/instagram.svg"  ontouchstart ="window.open('https://www.instagram.com/n.kristov')" />
+                                <input id="m2-link" type="image" src="./svg/team2/linkedin.svg"  ontouchstart ="window.open('https://www.linkedin.com/in/nik-kristov-66638a1a0/')" />
+                            </div>
+                            <div class="m3-info"> 
+                                <div class="info-container">
+                                    <img id="m3_inf" alt="m2_info" src="./svg/team4/m3_i.png" loading="lazy">
+                                    <!-- <img id="m3_inf" alt="m2_info" src="./svg/team3/m1_i.png" loading="lazy"> -->
+                                </div>
+                                <input id="m3-tg" type="image" src="./svg/team4/icon_teleg.svg"  ontouchstart ="window.open('https://t.me/deloodin')" />
+                                <input id="m3-link" type="image" src="./svg/team2/linkedin.svg"  onClick="window.open('https://icon_linc')"ontouchstart ="window.open('https://www.linkedin.com/in/yevhenvityuk/')" />
+                                <input id="m3-fb" type="image" src="./svg/team4/icon_fb.svg"  ontouchstart ="window.open('https://www.facebook.com/YevhenVitiuk')" />
+                            </div>
+                        </div> 
+                    </div>
+                </div>                
+                <div id="footer" class="row" >
+                    <div class="all_right-container">
+                        <div class="all_right">© All rights reserved. Developed by WINDNFIRE<span>TERMS.</span><span>POLICY.</span><span>OFFER.</span></div>
+                       
+                        <!-- <div id="all_right" class="all_right">© All rights reserved. Developed by WINDNFIRE 
+                            <span><a href="../../files/terms.txt" >TERMS.</a></span> 
+                            <span><a href="files/policy.txt" download>POLICY.</a></span> 
+                            <span><a href="files/offer.txt" download>OFFER.</a></span> 
+                        </div> -->
+                    </div>
+                      
+                    <div class="logo-footer-container" >
+                        <div id="footer-logo" > <img id="fire"  alt="fire" src="./img/fire2.gif" loading="lazy">
+                            WINDNFIRE
+                        </div>              
+                    </div>
+                    <div class="footer-text" >                        
+                        <div class="right_text">
+                            <div  >WINDNFIRE S.R.O.</div> 
+                            <div >IČO 07248687</div> 
+                            <div  >DUBICKÁ 923/29,</div> 
+                            <div  >470 01&#8195;ČESKÁ LÍPA </div> 
+                            <div class="contact" ontouchstart ="window.open('https://t.me/wnf_agency')"  >CONTACT US IN TELEGRAM </div> 
+                            <div class="selectable">INFO@WINDNFIRE.COM</div> 
+                        </div> 
+                    </div> 
+                    
+                </div> 
+            </div>
+            <div id="modal"></div>            
+        </form>
+
+       
+    </div>
+    <link rel="preload" href="./fonts/ArialBlack.eot" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ArialBlack.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/WombyRUSbyDaymarius.eot" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/WombyRUSbyDaymarius.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/Poppins-Regular.eot" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/Poppins-Regular.ttf" as="font" crossorigin="anonymous" />
+
+   
+    <style type="text/css"> 
+        @font-face {
+            font-family: ArialBlack;
+            src: url("./fonts/ArialBlack.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: ArialBlack;
+            src: url("./fonts/ArialBlack.ttf") /* TTF file for CSS3 browsers */
+        }        
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/WombyRUSbyDaymarius.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/WombyRUSbyDaymarius.ttf") /* TTF file for CSS3 browsers */
+        }        
+        @font-face {
+            font-family: Poppins;
+            src: url("./fonts/Poppins-Regular.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url("./fonts/Poppins-Regular.ttf") /* TTF file for CSS3 browsers */
+        }        
+    </style>
+    <script src='./libs/jquery.min.js'></script>
+    <script defer src="./libs/simple-adaptive-slider.min.js"></script>
+    <script>   
+         $(document).ready(function()
+        { 
+            let el = $(".slider_selection_item ")[0].children[0]
+            el.classList.add("active")           
+        })
+        function panelNavigation(id, side){
+            // debugger;
+            let a = side == "next"? 1 : -1 ;
+            let arr = $(".slider__indicator")
+            let activeId = $(".slider__indicator.slider__indicator_active")[0].dataset.slideTo
+            if(id == null){
+                id = +activeId + +a
+                if( id == arr.length){
+                    id = 0
+                }  
+                if( id ==  -1 ) {
+                    id = arr.length - 1
+                }
+            } 
+            document.getElementsByClassName("slider__indicator ")[id].click();
+            let idSl = $(".slider__indicator.slider__indicator_active")[0].dataset.slideTo
+            $(".slider_selection_item .checkbox__control.active")[0].nextElementSibling.style.color = "black";;
+            $(".slider_selection_item .checkbox__control.active")[0].classList.remove("active");
+
+            //  debugger;
+            $(".slider_selection_item")[idSl].children[0].classList.add("active");  
+            $(".slider_selection_item")[idSl].children[0].nextElementSibling.style.color = "#e7335d";  
+        }
+        let swipe = false;
+        let curretnSlide = 0
+        let x = 0  
+
+        $('.slider').on('touchstart', function(e){     
+            // debugger;
+            if(event.touches.length != 1) return
+            x = event.changedTouches[0].clientX;
+            swipe = true;  
+            
+        })
+        $('.slider').on('touchend', function(e){   
+            
+            // debugger;
+            if(!swipe) return                      
+            let curretnSlide = +document.getElementsByClassName("slider__indicator_active")[0].dataset.slideTo
+            
+            let el = $(".slider_selection_item .checkbox__control.active")[0]
+
+            el.nextElementSibling.style.color = "black";
+            $(".slider_selection_item .checkbox__control.active")[0].classList.remove("active");
+            let elem = $(".slider_selection_item .checkbox__control")            
+            if(curretnSlide == 0 && x < event.changedTouches[0].clientX )
+                elem[elem.length-1].classList.add("active") 
+            else if(curretnSlide == elem.length-1 && x > event.changedTouches[0].clientX ) 
+                elem[0].classList.add("active")
+            else{
+                // debugger;
+                x > event.changedTouches[0].clientX ? elem[curretnSlide+1].classList.add("active") : elem[curretnSlide-1].classList.add("active") 
+                x > event.changedTouches[0].clientX ? elem[curretnSlide+1].nextElementSibling.style.color = "#e7335d"
+                                                    : elem[curretnSlide-1].nextElementSibling.style.color = "#e7335d" 
+            }                      
+            swipe = false 
+            
+        })
+
+       
+        // $(".pink.double.slider_").mouseup((event)=>{
+
+        //     if(!swipe) return
+        //     // let df = x - event.pageX
+        //     // console.log(df);
+        //     // if (Math.abs(x - event.pageX) < 100) return            
+        //     let curretnSlide = +document.getElementsByClassName("slider__indicator_active")[0].dataset.slideTo
+        //     $(".slider_selection_item .checkbox__control.active")[0].classList.remove("active");
+        //     let elem = $(".slider_selection_item .checkbox__control")            
+        //     if(curretnSlide == 0 && x < event.pageX )
+        //         elem[elem.length-1].classList.add("active") 
+        //     else if(curretnSlide == elem.length-1 && x > event.pageX ) 
+        //         elem[0].classList.add("active")
+        //     else x > event.pageX? elem[curretnSlide+1].classList.add("active") : elem[curretnSlide-1].classList.add("active")                      
+        //     swipe = false                       
+        // })           
+        //   text_loading
+        $(document).ready(function()
+        { 
+            $(".wrap_loader")[0].style.display= "none"
+        })
+        jQuery(function($) {
+            var doAnimations = function() { 
+                var offset = $(window).scrollTop() + $(window).height(),
+                    $animatables = $('.animatable');
+                    if ($animatables.length == 0) {
+                        $(window).off('scroll', doAnimations);
+                    }
+                    $animatables.each(function(i) {
+                        var $animatable = $(this);
+                        if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+                            $animatable.removeClass('animatable').addClass('animated');
+                        }
+                    });
+                    $animatables2 = $('.animatable2');
+                    if ($animatables2.length == 0) {
+                        $(window).off('scroll', doAnimations);
+                    }
+                    $animatables2.each(function(i) {
+                        var $animatable2 = $(this);
+                        if (($animatable2.offset().top + $animatable2.height() - 350) < offset) {
+                            $animatable2.removeClass('animatable').addClass('animated');
+                        }
+                    });
+            };
+            $(window).on('scroll', doAnimations);
+            $(window).trigger('scroll');
+
+        });
+    </script>   
+
+    <link rel="stylesheet" href="./libs/simple-adaptive-slider.min.css" />
+    <link rel="stylesheet" href="css/style2.css" />   
+    <link rel="stylesheet" href="css/checkboxCountry.css" />   
+    <link rel="stylesheet" href="css/slider_select.css" />   
+    <!-- <link rel="stylesheet" href="css/checkbox3.css" />   
+    <link rel="stylesheet" href="css/checkbox4.css" />    -->
+    <link rel="stylesheet" href="css/checkbox8_1.css" />   
+    <link rel="stylesheet" href="css/checkbox8_2.css" /> 
+
+    <link rel="stylesheet" href="css/checkbox10.css" />   
+    <link rel="stylesheet" href="css/checkbox10-1.css" />   
+    <link rel="stylesheet" href="css/checkbox10-2.css" />   
+    <link rel="stylesheet" href="css/checkbox10-3.css" />
+    
+
+    <link rel="stylesheet" href="css/checkbox12.css" />  
+    <link rel="stylesheet" href="css/checkbox12-1.css" />  
+    <link rel="stylesheet" href="css/checkbox12-2.css" />  
+    <link rel="stylesheet" href="css/checkbox12-3.css" />  
+    <link rel="stylesheet" href="css/range.css" />  
+    <link rel="stylesheet" href="css/country.css" />  
+    <link rel="stylesheet" href="css/css_Artem.css" />  
+    <link rel="stylesheet" href="css/team.css" />  
+    <link rel="stylesheet" href="css/mySlider.css" />
+    <link rel="stylesheet" href="css/sliderLanding.css" />   
+    <link rel="stylesheet" href="css/modal.css" />  
+    <link rel="stylesheet" href="css/HowerEffectCss.css" />  
+    
+    <link rel="stylesheet" href="css/mobile2.css" />   
+    <!-- <link rel="stylesheet" href="css/SlidesFolder.css" />  -->
+    
+    <!-- <link rel="stylesheet" href="css//aos.css" />
+    <script  src="js/aos.js"></script>
+     <script>
+       AOS.init({
+                 // Global settings:
+                 disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                 startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                 initClassName: 'aos-init', // class applied after initialization
+                 animatedClassName: 'aos-animate', // class applied on animation
+                 useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                 disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                 debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                 throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+                 
+ 
+                 // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                 offset: -80, // offset (in px) from the original trigger point
+                 delay: 0, // values from 0 to 3000, with step 50ms
+                 duration: 800, // values from 0 to 3000, with step 50ms
+                 easing: 'ease', // default easing for AOS animations
+                 once: false, // whether animation should happen only once - while scrolling down
+                 mirror: false, // whether elements should animate out while scrolling past them
+                 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+ 
+                 });
+     </script> -->
+     
+
+
+
+
+   
+    <!-- <script  src="js/script.js"></script> -->
+    <script  src="js/script_mobile.js"></script>
+
+    <script  >
+        const landscapeHeight = () => {
+          const doc = document.documentElement
+          doc.style.setProperty('--landscape-height', `${window.innerHeight}px`)
+      }
+      window.addEventListener('resize', landscapeHeight)
+      landscapeHeight() 
+        
+        
+        // function panelNavigation(id, side){
+        //     let a = side == "next"? 1 : -1 ;
+        //     let arr= document.getElementsByClassName("slider__item")
+        //     let activeId = document.getElementsByClassName("slider__item_active")[0].dataset.index
+        //     arr[activeId].classList.remove("slider__item_active");
+
+        //     if(id == null){
+        //         id = +activeId + +a
+        //         if( id == arr.length){
+        //             id = 0
+        //         }  
+        //         if( id ==  -1 ) {
+        //             id = arr.length - 1
+        //         }
+
+        //     } 
+
+        //     arr[id].classList.add("slider__item_active");
+        //     for (let i = 0; i < arr.length; i ++) {         
+        //     arr[i].style.transform = "translateX(0%)";
+        //     }        
+        //     document.getElementsByClassName("slider__items")[0].style.transform = "translateX(-"+id+"00%)";
+        // }
+        
+
+
+        // let cursorInterval = setInterval( () =>  $('#budget-cursor')[0].style.display = $('#budget-cursor')[0].style.display == ""? 'none': '' ,450);
+        // function changeBudget(){            
+        //     if($('#budget-cursor')[0].value !== '') {
+        //         $('#budget-cursor')[0].style.display = "none"                
+        //         let moneyCount = makeMoney($('#budget_input')[0].value.toString().replace(' ',''));
+        //         if(moneyCount.length > 9 ) moneyCount = moneyCount.replace(' ','').substring(0, moneyCount.length - 1 )
+        //         if(moneyCount == 'NaN') moneyCount='';
+        //         $('#budget_input')[0].value = moneyCount;
+        //         $('#budget_input')[0].style.textAlign = "right";
+        //         clearInterval(cursorInterval)
+        //     } 
+        //     if($('#budget_input')[0].value == ''){
+        //         cursorInterval = setInterval( () =>  $('#budget-cursor')[0].style.display = $('#budget-cursor')[0].style.display == ""? 'none': '' ,450)
+        //         $('#budget_input')[0].style.textAlign = '';
+        //     }
+             
+        // }   
+        // function makeMoney(n) {
+        //     n = n.replace(' ',''); 
+        //     if(n > 1000000) n = 1000000;
+        // return parseFloat(n).toFixed(0).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g,'$1 ');
+        // }
+       
+        document.addEventListener('DOMContentLoaded', function () {
+        // инициализация слайдера
+        var slider = new SimpleAdaptiveSlider('.slider', {
+          loop: true,
+          autoplay: false,
+          swipe: true
+        });
+      }); 
+        $(".all_right span").on("click",function(e){
+            let name = e.target.innerHTML.substring(0, e.target.innerHTML.length-1).toLowerCase()
+            $.ajax({
+                type: 'get',
+                url: `/files/load?name=${name}`,    
+                processData: false,
+                contentType: 'application/json',
+                body: JSON.stringify({data:name}),
+                xhrFields: {
+                    withCredentials: false
+                },  
+                headers: {
+                }, 
+                success: function (data) { 
+                        let a = document.createElement("a")
+                        a.setAttribute("href", "data:text/plain," + data);
+                        a.setAttribute("download", `${name}`);
+                        a.click();
+                   
+                },  
+                error: function(xhr, status, error) {     
+                    debugger;           
+                }
+            });
+        })
+      function rockSubmit(){
+        if(label_tel.value.length < 3){                
+                label_tel.style.border = " 3px solid #e7335d "
+                setTimeout(() => {  
+                    label_tel.style.border = " 3px solid transparent "
+                }, 300);
+                setTimeout(() => {  
+                    label_tel.style.border = " 3px solid #e7335d "
+                }, 450);
+                setTimeout(() => {  
+                    label_tel.style.border = " 3px solid transparent "
+                }, 750);
+
+            } 
+            if(label_tel.value.length < 3) return
+          
+            let data ={}
+            data.defi = $(":checkbox[name='defi']")[0].checked
+            data.development = $(":checkbox[name='development']")[0].checked
+            $(".get-in-touch")[0].style.marginLeft = "-180vw"
+            $(".mob_thank")[0].style.marginLeft = "0"
+            $.ajax({
+              type: 'get',
+              url: `/data/save?defi=${data.defi}&development=${data.development}`,    
+              processData: false,
+              contentType: 'application/json',
+              body: JSON.stringify({data:data}),
+              xhrFields: {
+                  withCredentials: false
+              },  
+              headers: {
+              }, 
+              success: function (data) { 
+              },  
+              error: function(xhr, status, error) {
+                var err = eval("(" + xhr.responseText + ")");
+              }
+            });
+           
+
+            let formDataSend = JSON.parse(localStorage.getItem("formData"))
+            if(!formDataSend) formDataSend = {"defi":"NO",
+                                "development":"NO",
+                                "timeframes": "", 
+                                "check_usa":"NO",
+                                "check-lat-am":"NO",
+                                "check_can":"NO",
+                                "check_afr":"NO",
+                                "check_asia":"NO",
+                                "check_eur":"NO",
+                                "check_rus":"NO",
+                                "check_aus":"NO",
+                                "check_dark-net":"NO",
+                                "check-ww":"NO",
+                                "GotExp": "NO",
+                                "NoExp":"NO",                               
+                                "budget": "0",
+                                "traffic":"NO",
+                                "community":"NO",
+                                "shilling":"NO",
+                                "influencers":"NO",
+                                "posting":"NO",
+                                "pr":"NO",
+                                "consulting":"NO",
+                                "development_list":"NO",
+                                "telegram":"",
+                                "email":"",
+                                "message":"",
+                                "name":""}           
+            formDataSend.telegram = label_tel.value != ''? label_tel.value.trim() : '';            
+            formDataSend.email = label_email.value != ''? label_email.value.trim() : '';
+            formDataSend.name = label_name.value != ''? label_name.value.trim() : '';
+            // formDataSend.phone = '" "';
+            // formDataSend.message = label_text_area.value != ''? label_text_area.value : '';
+            formDataSend.message = label_text_area.value != ''? label_text_area.value : '';
+            $.ajax({
+              type: 'get',
+              url: '/sendmail',    
+              processData: false,
+              contentType: 'application/json',
+              data: JSON.stringify(formDataSend),
+              xhrFields: {
+                  withCredentials: false
+              },  
+              headers: {
+              }, 
+              success: function (data) { 
+                localStorage.removeItem("formData")          
+              },  
+              error: function(xhr, status, error) {
+                var err = eval("(" + xhr.responseText + ")");
+              }
+            });
+            
+            // setTimeout(() => {
+            //     window.location.replace("/");              
+            // }, 2000);
+
+       
+      }
+    //   function contactSubmit(){
+    //        $("#modal")[0].style.display = "block";
+    //   }
+    //   function closeModal(){
+    //         $("#modal")[0].style.display = "none"; 
+    //   }
+
+        $('.panel-item.check-country-item').on('click', function(e){
+          this.children[2].click();                          
+        });  
+        $(".member1_control").mouseenter(()=>{
+            $("#member1_wb")[0].style.opacity = "0"
+            $(".m3-info")[0].style.opacity = "0"
+            $(".m2-info")[0].style.opacity = "0"
+            $(".m1-info")[0].style.opacity = "1"
+           
+        })        
+        $(".member1_control").mouseleave(()=>{
+            $("#member1_wb")[0].style.opacity = "1"                           
+            $(".m1-info")[0].style.opacity = "0"
+        })
+        $(".member2_control").mouseenter(()=>{
+            $("#member2_wb")[0].style.opacity = "0"
+            $(".m3-info")[0].style.opacity = "0"
+            $(".m1-info")[0].style.opacity = "0"
+            $(".m2-info")[0].style.opacity = "1"
+        })        
+        $(".member2_control").mouseleave(()=>{
+            $("#member2_wb")[0].style.opacity = "1"           
+            $(".m2-info")[0].style.opacity = "0"
+        })
+        $(".member3_control").mouseenter(()=>{
+            $("#member3_wb")[0].style.opacity = "0"
+            $(".m1-info")[0].style.opacity = "0"
+            $(".m2-info")[0].style.opacity = "0"
+            $(".m3-info")[0].style.opacity = "1"
+        })        
+        $(".member3_control").mouseleave(()=>{
+            $("#member3_wb")[0].style.opacity = "1"
+            $(".m3-info")[0].style.opacity = "0"
+        })                 
+        
+            
+    </script>
+     
+      <script>
+        function initFormData(){            
+            if (!localStorage.getItem("formData")){
+                let formData = {"defi":"NO",
+                                "development":"NO",
+                                "timeframes": "", 
+                                "check_usa":"NO",
+                                "check-lat-am":"NO",
+                                "check_can":"NO",
+                                "check_afr":"NO",
+                                "check_asia":"NO",
+                                "check_eur":"NO",
+                                "check_rus":"NO",
+                                "check_aus":"NO",
+                                "check_dark-net":"NO",
+                                "check-ww":"NO",
+                                "GotExp": "NO",
+                                "NoExp":"NO",                               
+                                "budget": "0",
+                                "traffic":"NO",
+                                "community":"NO",
+                                "shilling":"NO",
+                                "influencers":"NO",
+                                "posting":"NO",
+                                "pr":"NO",
+                                "consulting":"NO",
+                                "development_list":"NO",
+                                "telegram":"",
+                                "email":"",
+                                "name":""}
+                localStorage.setItem("formData", JSON.stringify(formData));
+            }
+        }
+        $(":checkbox").change(function(e)
+        {
+            initFormData()
+            let data = JSON.parse(localStorage.getItem("formData"))
+            let cheked = e.target.checked;           
+            switch (e.target.name) {
+                case "defi":
+                    cheked? data.defi = "YES" :"NO"  
+                    break;
+                case "development":
+                    cheked? data.development = "YES" :"NO"                    
+                    break;
+                case "check_usa":
+                    cheked? data.check_usa = "YES" :"NO"                    
+                    break;
+                case "check-lat-am":
+                    cheked? data['check-lat-am'] = "YES" :"NO"                    
+                    break;
+                case "check_can":
+                    cheked? data.check_can = "YES" :"NO"                    
+                    break;
+                case "check_afr":
+                    cheked? data.check_afr = "YES" :"NO"                    
+                    break;
+                case "check_asia":
+                    cheked? data.check_asia = "YES" :"NO"                    
+                    break;
+                case "check_eur":
+                    cheked? data.check_eur = "YES" :"NO"                    
+                    break;
+                case "check_rus":
+                    cheked? data.check_rus = "YES" :"NO"                    
+                    break;
+                case "check_aus":
+                    cheked? data.check_aus = "YES" :"NO"                    
+                    break;
+                case "check_dark-net":
+                    cheked? data['check_dark-net'] = "YES" :"NO"                    
+                    break;
+                case "check-ww":
+                    cheked? data.check_usa = data['check-lat-am'] = data.check_can = data.check_afr = data.check_asia = data.check_eur = data.check_aus = data.check_rus = data['check_dark-net'] = "YES" 
+                          : data.check_usa = data['check-lat-am'] = data.check_can = data.check_afr = data.check_asia = data.check_eur = data.check_aus = data.check_rus = data['check_dark-net'] = "NO"              
+                    break;
+                case "GotExp":
+                    cheked? data.GotExp = "YES" :"NO"                    
+                    break;
+                case "NoExp":
+                    cheked? data.NoExp = "YES" :"NO"                    
+                    break;
+                case "traffic":
+                    cheked? data.traffic = "YES" :"NO"                    
+                    break;
+                case "community":
+                    cheked? data.community = "YES" :"NO"                    
+                    break;
+                case "shilling":
+                    cheked? data.shilling = "YES" :"NO"                    
+                    break;
+                case "influencers":
+                    cheked? data.influencers = "YES" :"NO"                    
+                    break;
+                case "posting":
+                    cheked? data.posting = "YES" :"NO"                    
+                    break;
+                case "pr":
+                    cheked? data.pr = "YES" :"NO"                    
+                    break;
+                case "consulting":
+                    cheked? data.consulting = "YES" :"NO"                    
+                    break;
+                case "development_list":
+                    cheked? data.development_list = "YES" :"NO"                    
+                    break;
+                default:
+                    break;
+            }
+            localStorage.setItem("formData", JSON.stringify(data));           
+        }); 
+        $('#range-time').on( "input",function(e)
+        {
+            initFormData()
+            let data = JSON.parse(localStorage.getItem("formData"))
+            let text = +e.target.value <=250 ? "WEEK" :   +e.target.value >=750 ? "YEAR" : "MONTH"
+            data.timeframes = text;
+            localStorage.setItem("formData", JSON.stringify(data));            
+        });   
+        $('#range-time2').on( "input",function(e)
+        {
+            initFormData()
+            let data = JSON.parse(localStorage.getItem("formData"))
+            data.budget = e.target.value
+            localStorage.setItem("formData", JSON.stringify(data));            
+        });  
+     </script>
+
+
+ 
+ 
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+
+.black.country .country-img img{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+.black.country .country-img img#maps{
+    position: absolute;
+   
+    z-index: 4;
+    opacity: 1;
+}
+/* .black.country .country-img img#checkbox-back{
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    margin-left: 0.05vw;
+} */
+img#checkbox-back{
+    /* position: absolute; */
+    z-index: 1;
+    opacity: 1;
+    margin-left: 0.05vw;
+    margin-top: -17.5vw;
+}
+#check-ww{
+    position: absolute;
+    margin-left: 3.5vw;
+    margin-top: 2vw;
+}
+.country-img img{
+    opacity: 0;
+}
+.country-img img .visible{
+    opacity: 1;
+}

@@ -1,0 +1,168 @@
+
+*
+{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    font-family: Womby, Impact, "Arial Black", sans-serif;
+    --height-visible: 50vw ;
+    
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.lang{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ .lang-item {
+    width: 5vw;
+    height: 4.7vw;
+    background: #FFFFFF;
+    content: 'ENG';
+    font-size: 1.3vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+ .lang-item.show{
+    display: flex;
+}
+ .lang-item span{
+    display: block;
+    height: 100%;
+}
+.left-block{
+    width: 74.5%;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    flex-grow: 1;
+    background: #e7335d;
+}
+
+.slider{
+    height: 81%;
+}
+.slider div{
+    width: 100%;
+    height: 100%;   
+}
+
+
+.arrows p{    
+    font-family: "Arial Narrow", sans-serif;
+    flex-grow: 1;
+    background: black;
+    color: white;
+    font-size: 7vw;
+}
+
+
+
+
+.menu{       
+    position: relative;
+    z-index: 99;
+    background-color: #e7335d;
+    padding-right: 2vw;
+    transition: all 1.2s;
+    text-align: right;
+}
+ul{
+    padding-top: 4vw;
+    margin-right: 4vw;
+}
+li{
+    list-style-type: none;
+    font-size: 2.2vw;
+    margin-bottom: 0.8vw;
+}
+.menu ul li:hover{
+    color: #fed841;
+    cursor: pointer;
+}
+#left-arrow{
+    margin-left: 12vw;
+    position: absolute;
+    margin-top: 2vw;
+}
+#right-arrow{
+    margin-left: 59vw;
+    position: absolute;
+    margin-top: 2vw;
+}
+
+
+#logo{
+   width: 29%;
+}
+#prev{
+    margin-left: -2vw;
+}
+
+.slider__control::before #next{
+    margin-left: 10vw;
+}
+.slider__control_next {
+    right: -12vw;
+}
+.slider__control {
+    position: fixed;
+    margin-top: 40vh;
+    width: 3vh;
+    opacity: 1;
+}
+#mail{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 5vw;
+    cursor: pointer;
+    z-index: 3;
+}
+.follow{
+    padding: 0.2vw;
+    display: flex;
+    margin-top: 3vw;    
+}
+.follow input{
+    width: 3vw;
+    padding: 0.2vw;
+    border-radius: 0.6vw;
+}
+div .social1{width: 50%;}
+/* .social1{
+    width: 50%;
+} */
+
+.arrows {
+    flex-grow: 1;
+    background: black;   
+    display: flex;
+    align-items: center;
+}
+
+.arrows div {
+    position: relative;
+    width: 33%;
+}
+.arrows div img {
+    padding-left: 33%;
+    padding-bottom: 3vw;
+}
+#arrow_prev, #arrow_next{
+    width: 10%;
+}
+
+
+
+

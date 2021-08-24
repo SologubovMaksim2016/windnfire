@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="894" height="504" viewBox="0 0 894 504">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.993" y1="0.5" x2="0.006" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1180cf"/>
+      <stop offset="1" stop-color="#040681"/>
+    </linearGradient>
+  </defs>
+  <g id="windows_98" data-name="windows 98" transform="translate(-513 -288)">
+    <g id="Прямоугольник_149" data-name="Прямоугольник 149" transform="translate(516 291)" fill="#519fac" stroke="#e1f3fa" stroke-width="3">
+      <rect width="888" height="498" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="891" height="501" fill="none"/>
+    </g>
+    <rect id="Прямоугольник_150" data-name="Прямоугольник 150" width="888" height="30" transform="translate(516 291)" stroke="#e1f3fa" stroke-width="2" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

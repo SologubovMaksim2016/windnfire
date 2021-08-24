@@ -1,0 +1,12 @@
+.slider__control {
+    position: absolute;
+    margin-top: -500vw;
+    margin-left: 2vw;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.slider__items .slider__item img{
+    height: 25vw;
+    width: 50vw;
+}

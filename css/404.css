@@ -1,0 +1,174 @@
+*
+{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    font-family: Womby, Impact, "Arial Black", sans-serif;
+    --height-visible: 50vw ;    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+      
+
+    
+}
+.container{
+    position: relative;;
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    flex-direction: column; 
+    overflow-y: hidden;
+}
+.row-giphy{
+    display: flex;
+    flex-direction: row;
+    margin-top: -1vw;
+}
+.gcont{
+    width: 14.285vw;   
+    position: relative;
+}
+.gcont img{
+    width: 100%;   
+}
+
+
+.windows-container{  
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.windows{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.win98-boxХ{
+    position: relative;
+}
+.win98Cont{
+    width: 46.5vw;
+    margin-left: 4vw;
+    margin-top: 5vw;
+}
+#win98{
+    position: absolute;
+    width: 46.5vw;
+    margin-top: -16vw;    
+}
+#ok-dotts{
+    position: absolute;
+    margin-left: 19vw;
+    margin-top: -0.35vw;
+    width: 8.5vw;
+}
+#mon-dotts{
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: -10.25vw;
+    width: 3vw;
+}
+#mail-dotts{
+    position: absolute;
+    margin-top: -5.8vw;
+    margin-left: 2.5vw;
+    width: 2.5vw;
+}
+#portfolio-dotts{
+    position: absolute;
+    margin-top: -1.25vw;
+    margin-left: 1.5vw;
+    width: 4.2vw;
+}
+#telegram-dotts{
+    position: absolute;
+    margin-top: 2.65vw;
+    margin-left: 1.5vw;
+    width: 5vw;
+}
+#service-dotts{
+    position: absolute;
+    margin-top: 7.5vw;
+    margin-left: 1.5vw;
+    width: 4vw;
+}
+#tel-dotts{
+    position: absolute;
+    margin-top: 6.4vw;
+    margin-left: 38vw;
+    width: 3vw;
+}
+#ma-dotts{
+    position: absolute;
+    margin-top: 6.4vw;
+    margin-left: 41.75vw;
+    width: 3vw;
+}
+#ok-dotts,
+#mon-dotts,
+#mail-dotts,
+#portfolio-dotts,
+#telegram-dotts,
+#service-dotts,
+#tel-dotts,
+#ma-dotts{
+   opacity: 0;
+}
+#ok-dotts:hover,
+#tel-dotts:hover,
+#ma-dotts:hover{
+    opacity: 1;
+}
+
+
+.hover-el{
+    position: relative;   
+}
+.hov-control{
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    margin-top: -13.4vw;
+    margin-left: 2.2vw;
+}
+.hov-control.h2{   
+    margin-top: -8.9vw;
+}
+.hov-control.h3{   
+    margin-top: -3.9vw;
+}
+.hov-control.h4{   
+    margin-top: 0vw;
+}
+.hov-control.h5{   
+    margin-top: 4.5vw;
+}
+.hover-el:hover #mon-dotts,
+.hover-el:hover #mail-dotts,
+.hover-el:hover #portfolio-dotts,
+.hover-el:hover #telegram-dotts,
+.hover-el:hover #service-dotts{
+    opacity: 1;
+}
+
+#formData{
+    position: relative;
+    height: 0;
+    width: 0;
+    margin-top: 100vh;
+}
+
+
+

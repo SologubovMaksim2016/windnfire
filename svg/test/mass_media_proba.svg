@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+    <defs>
+        <style>
+        .cls-1{fill:#fed841;}.cls-2{font-size:128.92px;}.cls-2,.cls-3,.cls-4{fill:#e7335d;}.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{font-family:WombyRUSbyDaymarius, "Womby [RUS by Daymarius]";}.cls-3{font-size:89.63px;}.cls-4,.cls-7{font-size:29.33px;}.cls-5{font-size:73.22px;fill:#fff;}.cls-6{font-size:19.56px;}
+        </style>
+    </defs>
+    <g id="фоны">
+        <rect class="cls-1" x="500" y="203.7" width="500" height="296.3"/>
+        <rect class="cls-1" x="500" width="500" height="204.94"/>
+        <rect class="cls-1" width="500" height="500"/>
+        <text class="cls-2" transform="translate(632.62 375.3)">$1200</text>
+        <text class="cls-3" transform="translate(728.64 257.67)">FROM</text>
+        <text class="cls-4" transform="translate(786.67 127.59)">COST OF THE
+            <tspan x="68.38" y="35.2">SERVICE</tspan>
+        </text>
+    </g>
+    <g id="Дизайн">
+        <text class="cls-5" transform="translate(31.93 110.01)">MASS MEDIA</text>
+        <text class="cls-6" transform="translate(34.94 237.15)">IT ALLOWS YOU TO ATTRACT THE ATTENTION 
+            <tspan x="0" y="23.47">OF JOURNALISTS, EDITORS, AND READERS TO </tspan>
+            <tspan x="0" y="46.93">THE PROJECT. WORKING IN THIS DIRECTION IS </tspan>
+            <tspan x="0" y="70.4">PRIMARILY AIMED AT PROMOTING THE </tspan>
+            <tspan x="0" y="93.87">PROJECT IN THE MEDIA. THE GOAL IS TO GET </tspan>
+            <tspan x="0" y="117.33">JOURNALISTS INTERESTED IN WRITING ABOUT </tspan>
+            <tspan x="0" y="140.8">THE PROJECT WITHOUT ADDITIONAL </tspan>
+            <tspan x="0" y="164.27">BUDGETS. </tspan>
+        </text>
+        <text class="cls-7" transform="translate(34.73 204.37)">WHAT IT IS USED FOR: </text>
+    </g>
+ </svg>

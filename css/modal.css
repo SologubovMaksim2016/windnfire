@@ -1,0 +1,312 @@
+#modal{
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-form{
+  position: relative;
+    z-index: 31;
+    width: 90vmin;
+    height: 90vmin;
+    background-color: rgba(0, 0, 0, 1);   
+    overflow: hidden;
+    background-image: linear-gradient(to right, #e7335d 50%, transparent 50%), linear-gradient(to right, #e7335d 50%, transparent 50%), linear-gradient(to bottom, #e7335d 50%, transparent 50%), linear-gradient(to bottom, #e7335d 50%, transparent 50%);
+    background-position: left top, left bottom, left top, right top;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 14vmin 2vmin, 14vmin 2vmin, 2vmin 14vmin, 2vmin 14vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-logo-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 38.5vmin;
+    margin-top: 2vmin;
+    transition: all 1s;
+}
+.modal-logo-container a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#modal-logo{
+  width: 10vmin;
+  transition: all 1s;
+}
+
+.touch-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s;
+    height: 70vmin;
+}
+textarea {
+  resize: none;
+}
+.get-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    transition: all 0.5s;
+}
+.get-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 11vmin;
+}
+.cont-modal1{
+  color: #e7335d;
+  font-size: 5.4vmin;
+  margin-top: -2.5vmin;
+  transition: all 1s;
+}
+.cont-modal2{
+    color: #e7335d;
+    font-size: 2vmin;
+    transition: all 1s;
+    margin-top: 1.5vmin;
+}
+
+
+.modal-content{
+  width: 73vmin;
+  height: 4vmin;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transition: all 1s;
+  flex-grow: 1;
+  align-content: space-between;
+  padding-top: 4vmin;
+  margin-top: -2vmin;
+}
+.modal-form-item-container{
+    width: 100%;
+    display: flex;
+}
+.modal-form-item{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.6vw;
+    margin-left: 0.6vw;
+    margin-bottom: 4vmin;
+}
+.modal-form-item.name{
+    width: 100%;
+   
+}
+.modal-form-item label{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    padding-top: 0.5vw;
+    padding-bottom: 0.2vw;
+    padding-left: 0vw;
+    font-size: 0.73vw;
+    color: #e7335d;
+}
+
+
+.modal-form-item.last {
+    width: 100%;
+    display: flex;
+    height: 10vmin;
+    flex-direction: column;    
+}
+.modal-form-item.last textarea{
+    height: 30vmin; 
+}
+.modal-form-item.last textarea::-webkit-input-placeholder {
+    color:rgba(230, 52, 94, 0.51);
+     padding-top: 1vw;
+     font-size: 2vmin;
+ }
+ 
+ .modal-form-item.last textarea::-moz-input-placeholder {
+    color:rgba(230, 52, 94, 0.51);
+    padding-top: 1vw;
+    font-size: 2vmin;
+ }
+ 
+ .modal-form-item.last textarea:-ms-input-placeholder {
+    color:rgba(230, 52, 94, 0.51);
+    padding-top: 1vw;
+    font-size: 2vmin;
+ }
+ 
+
+
+
+.lets-rock-container{
+  width: 30vmin;
+  height: 38.5vmin;
+  margin-bottom: 2vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.but-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.small_label {
+    font-family: 'Arial Narrow', Arial, sans-serif;    
+}
+a.small_label{   
+    margin-left: 15vw;
+    margin-top: -1.38vw;
+    width: 5vw;
+    font-size: 0.765vw; 
+}
+label.small_label{   
+    margin-left: 18.88vw;
+    margin-top: -1.33vw;
+    width: 9vw;
+    font-size: 0.765vw;
+}
+
+
+.modal-form-item .dotted{
+  border: 0.15vw dotted #e7335d;
+  width: 40.4vw;
+  height: 1.87vw;
+  box-sizing: border-box;
+  margin-top: 0.65vw;
+}
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  textarea
+  {
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0.6vw 0vw 0.6vw 1.5vw;
+    font-size: 2vmin;
+    height: 5.7vmin;
+    margin-bottom: -0.9vmin;
+    margin-top: 0.9vmin;
+    border: 8px solid transparent;
+  }
+  #label2 input[type="text"],
+  #label2 input[type="email"],
+  #label2 input[type="url"]{
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0.6vw 0vw 0.6vw 1.5vw;
+    font-size: 17.3px;
+    height: 3.04vw;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:rgba(230, 52, 94, 0.51)
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color:rgba(230, 52, 94, 0.51)
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color:rgba(230, 52, 94, 0.51)
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color:rgba(230, 52, 94, 0.51)
+  }
+  
+
+  #hand{
+    position: relative;
+    width: 2.6vmin;
+    margin-left: 13vmin;
+    margin-top: -5vmin;
+  }
+  #submit-modal{
+    width: 23.25vmin;
+    height: 5.8vmin;
+    background: #fed841;
+    border: none;
+    color: #e7335d;
+    font-size: 2vmin;
+    margin-top: -0.2vmin;
+    padding-top: 0.1vmin;
+    padding-right: 1.2vmin;
+  }
+
+  #close-modal{
+    position: absolute;
+    width: 5.5vmin;
+    right: 0;
+    top: 0;
+    margin-top: 7vmin;
+    margin-right: 7vmin;
+    transition: all 1s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .thank-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 125vmax;
+    transition: all 1s;
+  }
+  .thank{   
+    position: absolute;
+    top: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    z-index: 30;
+    transition: all 1.5s;
+    margin-top: 12vh;
+}
+.thank1 {   
+    color: #e7335d;
+    margin-left: 0;
+    font-size: 6.35vw;
+    margin-top: 24vmin;
+    margin-bottom: 4.5vw;
+    white-space: nowrap;
+}
+.thank2, .thank3 {
+    color: #e7335d;
+    margin-left: 0;
+    font-size: 5vh;
+    padding-top: 0vw;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}

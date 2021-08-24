@@ -1,0 +1,60 @@
+#slide1-1{
+    background-image: url("./svg/graphLinq_1.svg");
+}
+#slide1-2{
+    background-image: url("./svg/graphLinq_2.svg");
+}
+#slide2-1{
+    background-image: url("./svg/telescr_in_1.svg");
+}
+#slide2-2{
+    background-image: url("./svg/telescr_in_2.svg");
+}
+#slide3-1{
+    background-image: url("./svg/utopia_1.svg");
+}
+#slide3-2{
+    background-image: url("./svg/utopia_2.svg");
+}
+/* #slide4-1{
+    background-image: url("./svg/new/Airdrop_1.svg");
+}
+#slide4-2{
+    background-image: url("./svg/new/Airdrop_2.svg");
+} */
+#slide4-1{
+    background-image: url("../svg/portfolio/graphLinq_1.svg");
+  }
+  #slide4-2{
+      background-image: url("../svg/portfolio/graphLinq_2.svg");
+  }
+  #slide5-1{
+      background-image: url("../svg/portfolio/telescr_in_1.svg");
+  }
+  #slide5-2{
+      background-image: url("../svg/portfolio/telescr_in_2.svg");
+  }
+  #slide6-1{
+      background-image: url("../svg/portfolio/utopia_1.svg");
+  }
+  #slide6-2{
+      background-image: url("../svg/portfolio/utopia_2.svg");
+  }
+  #slide7-1{
+    background-image: url("../svg/portfolio/graphLinq_1.svg");
+  }
+  #slide7-2{
+      background-image: url("../svg/portfolio/graphLinq_2.svg");
+  }
+  #slide8-1{
+      background-image: url("../svg/portfolio/telescr_in_1.svg");
+  }
+  #slide8-2{
+      background-image: url("../svg/portfolio/telescr_in_2.svg");
+  }
+  #slide9-1{
+      background-image: url("../svg/portfolio/utopia_1.svg");
+  }
+  #slide9-2{
+      background-image: url("../svg/portfolio/utopia_2.svg");
+  }

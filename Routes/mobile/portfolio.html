@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="height=device-height">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title></title>
+   
+    <script src='./libs/jquery.min.js'></script>
+    <link rel="stylesheet" href="./libs/simple-adaptive-slider.min.css"> 
+    <script defer src="./libs/simple-adaptive-slider.min.js"></script>
+    <link rel="stylesheet" href="css/mySlider.css" />
+     
+      
+    <!-- <script defer src="./js/script.js"></script> -->
+    <script defer src="./js/script_mobile.js"></script>
+    <link rel="stylesheet" href="css/modal.css" />  
+    <link rel="stylesheet" href="css/mobile2.css" /> 
+    <link rel="stylesheet" href="css/style-portfolio-mobile.css" />   
+    <link rel="stylesheet" href="css/modalUpdate.css" />   
+    <script>
+       
+      const sliderHeight = () => {
+          const doc = document.documentElement
+          const sliderHeight_ = window.innerHeight*85/100;
+          const sliderWidth_ = window.innerHeight*42.5/100;
+          const landscapeHeight_ = window.innerHeight;
+          doc.style.setProperty('--slider-height', `${sliderHeight_ }px`)
+          doc.style.setProperty('--slider-width', `${sliderWidth_ }px`)
+          doc.style.setProperty('--landscape-height', `${landscapeHeight_ }px`)
+      }
+      window.addEventListener('resize', sliderHeight)
+      sliderHeight() 
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var slider = new SimpleAdaptiveSlider('.slider', {
+          loop: true,
+          autoplay: false,
+          swipe: true
+        });
+      });     
+    </script>   
+    
+    <style>
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/Womby.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/Womby.ttf") /* TTF file for CSS3 browsers */
+        }        
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/WombyRUSbyDaymarius.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: Womby;
+            src: url("./fonts/WombyRUSbyDaymarius.ttf") /* TTF file for CSS3 browsers */
+        }        
+        @font-face {
+            font-family: Poppins;
+            src: url("./fonts/Poppins-Regular.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url("./fonts/Poppins-Regular.ttf") /* TTF file for CSS3 browsers */
+        }        
+        .MAINBOX{
+            overflow-x: hidden !important;
+            height: 100%;
+        }
+    </style>
+  </head>
+  <body>   
+  <div id="landscape">
+      <div class="logo-container">
+          <img id="intro-logo" src="intro-logo.png" alt="intro-logo" srcset="./svg/logo.svg"> 
+          <img id="fire1"  alt="fire" src="./img/fire.gif">
+          <div class="landscape-text"> *THE SITE WORKS IN PORTRAIT ORIENTATION</div>
+          
+      </div>
+      <div class="all_right-container">
+        <div class="all_right">© All rights reserved. Developed by WINDNFIRE</div> 
+      </div> 
+  </div>
+
+    <div class="MAINBOX">
+       <div class="container">
+        <div class="lang">                   
+          <div id="en" class="lang-item show"><span>EN</span></div>
+          <div id="ru" class="lang-item"><span>RU</span></div>
+          <div id="cz" class="lang-item"><span>CZ</span></div> 
+        </div>
+
+
+        <div class="gamburger">
+          <img id="gamburger" src="gamburger.png" alt="gamburger" srcset="./svg/gamburger.svg">                   
+        </div>
+        <div class="mail">
+          <img id="mail" src="mail.png" alt="mail" srcset="./svg/mail.svg" onclick="contactSubmit()">                   
+        </div>
+        <div id="menu" class="menu">
+          <div class="close">
+              <img id="close" src="close.png" alt="close" srcset="./svg/close.svg"> 
+          </div>  
+          <div class="up_menu-container">
+            <div class="accordeon-container">
+                <div class="set first">
+                    <a id="home" href="/">HOME</a>
+                    <img id="downArrow2" src="downArrow.png" alt="downArrow2" srcset="./svg/arrowDown2.svg" loading="lazy1">
+                    <img id="downArrow" src="downArrow.png" alt="downArrow" srcset="./svg/arrowDown.svg" loading="lazy1">
+                    <div class="content">
+                        <p><a href="/#tipe">TIPE</a></p>
+                        <p><a href="/#time_frames">TIME FRAMES</a></p>                                        
+                        <p ><a href="/#region">REGION</a></p>  
+                        <p><a href="/#budget">BUDGET</a></p>
+                        <p><a href="/#background">BACKGROUND</a></p>
+                        <p><a href="/#services">SERVICES</a></p>
+                        <p><a href="/#contact">CONTACT</a></p>      
+                        <p><a href="/#articles">ARTICLES</a></p>      
+                        <p><a href="/#portfolio">PORTFOLIO</a></p>      
+                        <p><a href="/#serviceList">SERVICE LIST</a></p>      
+                        <p><a href="/#chat">COMMUNITY</a></p>     
+                        <p><a href="/#team">TEAM</a></p>      
+                    </div>
+                </div>                               
+                <div class="set">
+                    <a href="/portfolio">PORTFOLIO</a>    
+                </div>
+                <div class="set">
+                  <a href="/services">SERVICES</a>    
+                </div>
+                <div class="set end">
+                    <a href="/blog">BLOG</a>    
+                </div>
+            </div>                            
+          </div>                  
+        
+        </div>
+
+
+
+
+
+          <div class="left-block">
+            <div id="slider" class="slider my">
+              <div class="slider__wrapper">
+                <div class="slider__items">
+
+                  <div class="slider__item">
+                    <div id="slide1-1" class="slide"  alt="" srcset="./svg/portfolio/graphLinq_1.svg"></div>
+                    <div id="slide1-2" class="slide"  alt="" srcset="./svg/portfolio/graphLinq_2.svg"></div>
+                  </div>      
+                  <div class="slider__item">
+                    <div id="slide2-1" class="slide"  alt="" srcset="./svg/portfolio/telescr_in_1.svg"></div>
+                    <div id="slide2-2" class="slide"  alt="" srcset="./svg/portfolio/telescr_in_2.svg"></div>                  
+                  </div>      
+                  <div class="slider__item">
+                    <div id="slide3-1" class="slide"  alt="" srcset="./svg/portfolio/utopia_1.svg"></div>
+                    <div id="slide3-2" class="slide"  alt="" srcset="./svg/portfolio/utopia_2.svg"></div>                  
+                  </div>      
+                  
+                </div>
+              </div>
+    
+              <a id="prev" class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+              <a id="next" class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+            </div>
+
+            
+            <div class="arrows desktop">
+              <div><img id="arrow_prev"  alt="" srcset="./svg/left_arrow.svg"> </div>
+              <div><img id="logo"  alt="fire" src="./img/fire.gif"></div>
+              <div><img id="arrow_next"  alt="" srcset="./svg/right_arrow.svg"> </div>
+            </div>
+            
+                    
+          </div>
+          <div class="right-block">
+            <div class="panel">                 
+                <ul class="right-panel">
+                    <li  onclick="panelNavigation(0)" class="active">
+                      <p>GRAPH</p>
+                      <p>LINQ</p>
+                    </li>   
+                    <li  onclick="panelNavigation(1)" >
+                      <p>TELESCR</p>
+                      <p>IN</p>
+                    </li> 
+                    <li  onclick="panelNavigation(2)" >UTOPIA</li>   
+                   
+                </ul>
+                <div class="follow">  
+                  <div class="social1">
+                    <input id="facebook" type="image" src="./svg/facebook.svg" onClick="window.open('https://www.facebook.com/windnfire.agency/')" />
+                    <input id="youtube" type="image" src="./svg/youtube.svg"  onClick="window.open('https://www.youtube.com/channel/UCoQQ5BvpXH4MC5P52whEcPg')" />
+                    <input id="telegram" type="image" src="./svg/telegram.svg"  onClick="window.open('https://t.me/wnf_agency')" />
+                  </div>  
+                  <div class="social2">
+                    <input id="instagram" type="image" src="./svg/instagram.svg"  onClick="window.open('https://www.instagram.com/windnfire.agency/?utm_medium=copy_link')" />
+                    <input id="twitter" type="image" src="./svg/twitter.svg"  onClick="window.open('https://twitter.com/wnf_agency')" />
+                    <input id="linkedin" type="image" src="./svg/linkedin.svg"  onClick="window.open('https://www.linkedin.com/company/windnfire/')" />
+                  </div>             
+                </div>
+                <!-- <div class="mail">
+                  <img id="mail" src="mail.png" alt="mail" srcset="./svg/mail.svg" onclick="sendMail()">                   
+                </div> -->
+            </div> 
+            <div class="arrows laptop">
+              <div><img id="arrow_prev1"  alt="" srcset="./svg/left_arrow.svg"> </div>
+              <div><img id="logo"  alt="fire" src="./img/fire.gif"></div>
+              <div><img id="arrow_next1"  alt="" srcset="./svg/right_arrow.svg"> </div>
+            </div>
+          </div>
+      </div>     
+        <div class="arrows smart">
+          <div><img id="arrow_prev2"  alt="" srcset="./svg/left_arrow.svg" onclick="panelNavigation(null,'prev')"> </div>
+          <div><img id="logo"  alt="fire" src="./img/fire.gif"></div>
+          <div><img id="arrow_next2"  alt="" srcset="./svg/right_arrow.svg" onclick="panelNavigation(null,'next')"> </div>
+        </div>
+     
+    </div>     
+    <form  id="main_form" class="fail">
+      <div id="modal"></div>
+    </form>
+
+  
+    <script> 
+        function panelNavigation(id, side){
+            let a = side == "next"? 1 : -1 ;
+            let arr = $(".slider__indicator")
+            let activeId = $(".slider__indicator.slider__indicator_active")[0].dataset.slideTo
+            if(id == null){
+                id = +activeId + +a
+                if( id == arr.length){
+                    id = 0
+                }  
+                if( id ==  -1 ) {
+                    id = arr.length - 1
+                }
+            } 
+            document.getElementsByClassName("slider__indicator ")[id].click();
+            let idSl = $(".slider__indicator.slider__indicator_active")[0].dataset.slideTo
+            $(".right-panel li.active")[0].classList.remove("active");
+            $(".right-panel li")[idSl].classList.add("active");             
+
+        }
+        let swipe = false;
+        let curretnSlide = 0
+        let x = 0 
+        $('#slider').on('touchstart', function(e){
+            if(event.touches.length != 1) return
+            x = event.changedTouches[0].clientX;
+            swipe = true; 
+        })
+        $('#slider').on('touchend', function(e){ 
+            if(!swipe) return         
+            let curretnSlide = +document.getElementsByClassName("slider__indicator_active")[0].dataset.slideTo
+            let el = $(".right-panel li")[0]
+            $(".right-panel li.active")[0].classList.remove("active");
+            let elem = $(".right-panel li") 
+            if(curretnSlide == 0 && x < event.changedTouches[0].clientX )
+                elem[elem.length-1].classList.add("active") 
+            else if(curretnSlide == elem.length-1 && x > event.changedTouches[0].clientX ) 
+                elem[0].classList.add("active")
+            else{
+                x > event.changedTouches[0].clientX ? elem[curretnSlide+1].classList.add("active") : elem[curretnSlide-1].classList.add("active")
+            }                      
+            swipe = false             
+        }) 
+        function rockSubmit(){
+          if(label_tel.value.length < 3){                
+                label_tel.style.border = " 3px solid #e7335d "
+                setTimeout(() => {  
+                    label_tel.style.border = " 3px solid transparent "
+                }, 300);
+                setTimeout(() => {  
+                    label_tel.style.border = " 3px solid #e7335d "
+                }, 450);
+                setTimeout(() => {  
+                    label_tel.style.border = " 3px solid transparent "
+                }, 750);
+            } 
+            if(label_tel.value.length < 3) return
+            $(".get-in-touch")[0].style.marginLeft = "-180vw"
+            $(".mob_thank")[0].style.marginLeft = "0"
+            let formDataSend = JSON.parse(localStorage.getItem("formData"))
+            if(!formDataSend) formDataSend = {"defi":"NO",
+                                "development":"NO",
+                                "timeframes": "", 
+                                "check_usa":"NO",
+                                "check-lat-am":"NO",
+                                "check_can":"NO",
+                                "check_afr":"NO",
+                                "check_asia":"NO",
+                                "check_eur":"NO",
+                                "check_rus":"NO",
+                                "check_aus":"NO",
+                                "check_dark-net":"NO",
+                                "check-ww":"NO",
+                                "GotExp": "NO",
+                                "NoExp":"NO",                               
+                                "budget": "0",
+                                "traffic":"NO",
+                                "community":"NO",
+                                "shilling":"NO",
+                                "influencers":"NO",
+                                "posting":"NO",
+                                "pr":"NO",
+                                "consulting":"NO",
+                                "development_list":"NO",
+                                "telegram":"",
+                                "email":"",
+                                "message":"",
+                                "name":""}           
+            formDataSend.telegram = label_tel.value != ''? label_tel.value.trim() : '';            
+            formDataSend.email = label_email.value != ''? label_email.value.trim() : '';
+            formDataSend.name = label_name.value != ''? label_name.value.trim() : '';
+            // formDataSend.phone = '" "';
+            // formDataSend.message = label_text_area.value != ''? label_text_area.value : '';
+            formDataSend.message = label_text_area.value != ''? label_text_area.value : '';
+            $.ajax({
+              type: 'get',
+              url: '/sendmail',    
+              processData: false,
+              contentType: 'application/json',
+              data: JSON.stringify(formDataSend),
+              xhrFields: {
+                  withCredentials: false
+              },  
+              headers: {
+              }, 
+              success: function (data) { 
+                console.log(data);
+                localStorage.removeItem("formData")    
+                // window.location.replace("/portfolio");           
+              },  
+              error: function(xhr, status, error) {
+                var err = eval("(" + xhr.responseText + ")");
+                
+                alert(err.Message);
+              }
+            });
+            
+            // setTimeout(() => {
+            //   window.location.replace("/portfolio");              
+            // }, 2000);
+        }     
+      
+    </script>
+  </body>
+</html>

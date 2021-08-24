@@ -1,0 +1,10 @@
+{
+    "IPv4": "***.***.***.***",
+    "port" :"8000",   
+    "db_config": {
+      "host": "localhost",
+      "database": "windfire",
+      "user": "root",
+      "password": "root"      
+    }
+}

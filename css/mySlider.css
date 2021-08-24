@@ -1,0 +1,158 @@
+  html{
+    height: 100%;
+  }
+  /* стили для элемента body */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  }
+  
+
+  /* дополнительные стили для этого примера */
+  .slider__items {
+    counter-reset: slide;
+  }
+
+  .slider__item {
+    counter-increment: slide;
+  }
+
+  .slider__item>div::before {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .slider__control{
+    position: fixed;
+    margin-top: 37vh;
+    width: 3vh;
+    opacity: 1;
+  }
+  .slider__indicators{
+    display: none;
+  }
+  .slider.my{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+    }
+  
+  .slider__item div{      
+  height: 100%;      
+  } 
+  .slider div{
+    border: 0;
+  }
+  .slider__control_prev::before{
+    /* background-image: url(../svg/left_arrow.svg); */
+    background-image: url(../svg/left_arrow_empty.svg);
+    position: fixed;
+    margin-left: 30vw;
+  }
+  .slider__control_next::before{
+    background-image: url(../svg/right_arrow_empty.svg);
+    /* background-image: url(../svg/right_arrow.svg); */
+    position: fixed;
+    margin-left: -100vw;
+  }
+  .slider__control::before{
+    content: '';
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    background-size: 100% 100%;
+  }
+  .slider__item>div::before{
+    opacity: 0;
+  }
+  .slider__wrapper{
+    background: black;    
+  }
+  .slider__items .slider__item{
+    background: black;
+  }
+  
+  .slider__items .slider__item img{
+      height: 99%;
+      width: 100%;
+  }
+
+  .slider__items .slider__item {
+    background: black;
+    text-align: -webkit-center;
+    display: flex;
+  }
+
+  .slider__items .slider__item div {
+    background-size: cover;
+    width: 25vw;
+    height: 25vw;
+  }
+  #slide1-1{
+    background-image: url("../svg/portfolio/graphLinq_1.svg");
+  }
+  #slide1-2{
+      background-image: url("../svg/portfolio/graphLinq_2.svg");
+  }
+  #slide2-1{
+      background-image: url("../svg/portfolio/telescr_in_1.svg");
+  }
+  #slide2-2{
+      background-image: url("../svg/portfolio/telescr_in_2.svg");
+  }
+  #slide3-1{
+      background-image: url("../svg/portfolio/utopia_1.svg");
+  }
+  #slide3-2{
+      background-image: url("../svg/portfolio/utopia_2.svg");
+  }
+
+
+  #slide4-1{
+    background-image: url("../svg/portfolio/graphLinq_1.svg");
+  }
+  #slide4-2{
+      background-image: url("../svg/portfolio/graphLinq_2.svg");
+  }
+  #slide5-1{
+      background-image: url("../svg/portfolio/telescr_in_1.svg");
+  }
+  #slide5-2{
+      background-image: url("../svg/portfolio/telescr_in_2.svg");
+  }
+  #slide6-1{
+      background-image: url("../svg/portfolio/utopia_1.svg");
+  }
+  #slide6-2{
+      background-image: url("../svg/portfolio/utopia_2.svg");
+  }
+  #slide7-1{
+    background-image: url("../svg/portfolio/graphLinq_1.svg");
+  }
+  #slide7-2{
+      background-image: url("../svg/portfolio/graphLinq_2.svg");
+  }
+  #slide8-1{
+      background-image: url("../svg/portfolio/telescr_in_1.svg");
+  }
+  #slide8-2{
+      background-image: url("../svg/portfolio/telescr_in_2.svg");
+  }
+  #slide9-1{
+      background-image: url("../svg/portfolio/utopia_1.svg");
+  }
+  #slide9-2{
+      background-image: url("../svg/portfolio/utopia_2.svg");
+  }
